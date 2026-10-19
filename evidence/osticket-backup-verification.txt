@@ -1,0 +1,3 @@
+application-config-restore-match
+cd2068b66715aab57ec7ed096d3540c42e440c7d301179e55c5a1ecf60bc7045  /root/lab-secrets/osticket-initial.sql
+ba0cee01ed6bdc5881c1fbb3b4078644754573b8cbf0841e404d1cbddcba2e40  /root/lab-secrets/osticket-application-initial.tar.gz

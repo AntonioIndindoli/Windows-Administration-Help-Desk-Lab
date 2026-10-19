@@ -1,0 +1,182 @@
+[
+    {
+        "exercise": "T01",
+        "ticket_id": 2,
+        "ticket_number": "309263",
+        "faq_id": 1,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T02",
+        "ticket_id": 3,
+        "ticket_number": "362597",
+        "faq_id": 2,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T03",
+        "ticket_id": 4,
+        "ticket_number": "907575",
+        "faq_id": 3,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T04",
+        "ticket_id": 5,
+        "ticket_number": "180602",
+        "faq_id": 4,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T05",
+        "ticket_id": 6,
+        "ticket_number": "114502",
+        "faq_id": 5,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T06",
+        "ticket_id": 7,
+        "ticket_number": "490643",
+        "faq_id": 6,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T07",
+        "ticket_id": 8,
+        "ticket_number": "497707",
+        "faq_id": 7,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T08",
+        "ticket_id": 9,
+        "ticket_number": "784878",
+        "faq_id": 8,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T09",
+        "ticket_id": 10,
+        "ticket_number": "546639",
+        "faq_id": 9,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T10",
+        "ticket_id": 11,
+        "ticket_number": "800590",
+        "faq_id": 10,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T11",
+        "ticket_id": 12,
+        "ticket_number": "978281",
+        "faq_id": 11,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T12",
+        "ticket_id": 13,
+        "ticket_number": "342687",
+        "faq_id": 12,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T13",
+        "ticket_id": 14,
+        "ticket_number": "924720",
+        "faq_id": 13,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T14",
+        "ticket_id": 15,
+        "ticket_number": "875136",
+        "faq_id": 14,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T15",
+        "ticket_id": 16,
+        "ticket_number": "901233",
+        "faq_id": 15,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T16",
+        "ticket_id": 17,
+        "ticket_number": "231786",
+        "faq_id": 16,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T17",
+        "ticket_id": 18,
+        "ticket_number": "802439",
+        "faq_id": 17,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T18",
+        "ticket_id": 19,
+        "ticket_number": "193262",
+        "faq_id": 18,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T19",
+        "ticket_id": 20,
+        "ticket_number": "920659",
+        "faq_id": 19,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    },
+    {
+        "exercise": "T20",
+        "ticket_id": 21,
+        "ticket_number": "856842",
+        "faq_id": 20,
+        "ticket_status": "open",
+        "faq_status": "private draft",
+        "verified": false
+    }
+]

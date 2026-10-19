@@ -1,0 +1,101 @@
+{
+  "sha": "8d38b0619649a50ee7cbbf37085f5d297fdc6f36",
+  "node_id": "C_kwDOALgU_NoAKDhkMzhiMDYxOTY0OWE1MGVlN2NiYmYzNzA4NWY1ZDI5N2ZkYzZmMzY",
+  "commit": {
+    "author": {
+      "name": "JediKev",
+      "email": "kevin@enhancesoft.com",
+      "date": "2026-06-17T22:01:48Z"
+    },
+    "committer": {
+      "name": "JediKev",
+      "email": "kevin@enhancesoft.com",
+      "date": "2026-06-17T22:01:48Z"
+    },
+    "message": "Add Release Notes for v1.18.4",
+    "tree": {
+      "sha": "b5d8c6e6e641206ef274a810bab9ea4dc7a9f86e",
+      "url": "https://api.github.com/repos/osTicket/osTicket/git/trees/b5d8c6e6e641206ef274a810bab9ea4dc7a9f86e"
+    },
+    "url": "https://api.github.com/repos/osTicket/osTicket/git/commits/8d38b0619649a50ee7cbbf37085f5d297fdc6f36",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/osTicket/osTicket/commits/8d38b0619649a50ee7cbbf37085f5d297fdc6f36",
+  "html_url": "https://github.com/osTicket/osTicket/commit/8d38b0619649a50ee7cbbf37085f5d297fdc6f36",
+  "comments_url": "https://api.github.com/repos/osTicket/osTicket/commits/8d38b0619649a50ee7cbbf37085f5d297fdc6f36/comments",
+  "author": {
+    "login": "JediKev",
+    "id": 11823401,
+    "node_id": "MDQ6VXNlcjExODIzNDAx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11823401?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JediKev",
+    "html_url": "https://github.com/JediKev",
+    "followers_url": "https://api.github.com/users/JediKev/followers",
+    "following_url": "https://api.github.com/users/JediKev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JediKev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JediKev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JediKev/subscriptions",
+    "organizations_url": "https://api.github.com/users/JediKev/orgs",
+    "repos_url": "https://api.github.com/users/JediKev/repos",
+    "events_url": "https://api.github.com/users/JediKev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JediKev/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "JediKev",
+    "id": 11823401,
+    "node_id": "MDQ6VXNlcjExODIzNDAx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11823401?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JediKev",
+    "html_url": "https://github.com/JediKev",
+    "followers_url": "https://api.github.com/users/JediKev/followers",
+    "following_url": "https://api.github.com/users/JediKev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JediKev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JediKev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JediKev/subscriptions",
+    "organizations_url": "https://api.github.com/users/JediKev/orgs",
+    "repos_url": "https://api.github.com/users/JediKev/repos",
+    "events_url": "https://api.github.com/users/JediKev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JediKev/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "93c2d125e23d35eaecdc9fa4e1aafc2de1b65de7",
+      "url": "https://api.github.com/repos/osTicket/osTicket/commits/93c2d125e23d35eaecdc9fa4e1aafc2de1b65de7",
+      "html_url": "https://github.com/osTicket/osTicket/commit/93c2d125e23d35eaecdc9fa4e1aafc2de1b65de7"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 5,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "6693ee53023797517219b5e766323fbe7754c393",
+      "filename": "WHATSNEW.md",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "blob_url": "https://github.com/osTicket/osTicket/blob/8d38b0619649a50ee7cbbf37085f5d297fdc6f36/WHATSNEW.md",
+      "raw_url": "https://github.com/osTicket/osTicket/raw/8d38b0619649a50ee7cbbf37085f5d297fdc6f36/WHATSNEW.md",
+      "contents_url": "https://api.github.com/repos/osTicket/osTicket/contents/WHATSNEW.md?ref=8d38b0619649a50ee7cbbf37085f5d297fdc6f36",
+      "patch": "@@ -1,3 +1,8 @@\n+osTicket v1.18.4\n+================\n+### Security\n+* security: Latest Patches 06/2026 (52c366f, 5afdf54, c54a6ac, 1e39bf1, feccb6a, 6eb6b98, 078516e, 98abb05, e52e010, fd96bba, 7bbd8ab, ba6217a, 580e1c8, b535782, 5963797, d590a97, eaebe01, b4cc092, d457c14, 5600f94, 5ff9795, 119cefe, b4ede88, 2a0c388, 6558b33)\n+\n osTicket v1.18.3\n ================\n ### Enhancements"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+*initial-users*.csv
+*credentials*.csv
+*.evtx
+*.vhdx
+*.vmdk
+*.iso
+LabSecrets/
+VMs/
+media/
+*.vdi
+*.sav
+*.nvram
+.tools/
+__pycache__/
+payload/

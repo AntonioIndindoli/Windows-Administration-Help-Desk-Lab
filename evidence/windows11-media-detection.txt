@@ -1,0 +1,7 @@
+OSTypeId="Windows11_64"
+OSVersion="10.0.26300.9457"
+OSFlavor="EnterpriseEval"
+OSLanguages="en-US"
+OSHints=""
+ImageIndex1="Windows 11 Enterprise Evaluation (10.0.26300.9457 / x64 / en-US)"
+IsInstallSupported="on"

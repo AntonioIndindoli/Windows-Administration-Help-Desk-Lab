@@ -1,0 +1,28 @@
+2026-10-18T15:55:54-07:00
+status: done
+ Static hostname: hd01
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: f7816552e33f444991c709b1f5ff310f
+         Boot ID: a072c19ff8424ccf866fdf8ca9fc4b14
+  Virtualization: oracle
+Operating System: Ubuntu 24.04.5 LTS
+          Kernel: Linux 6.8.0-147-generic
+    Architecture: x86-64
+ Hardware Vendor: innotek GmbH
+  Hardware Model: VirtualBox
+Firmware Version: VirtualBox
+   Firmware Date: Fri 2006-12-01
+    Firmware Age: 19y 10month 2w 3d
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+lab0             UP             10.77.0.30/24 10.77.0.1/24 fe80::a00:27ff:fe9f:895f/64 
+nat0             UP             10.0.3.15/24 metric 100 fd17:625c:f037:3:a00:27ff:fed6:7470/64 fe80::a00:27ff:fed6:7470/64 
+active
+active
+active
+PHP 8.3.6 (cli) (built: Sep  2 2026 12:56:02) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.3.6, Copyright (c) Zend Technologies
+    with Zend OPcache v8.3.6, Copyright (c), by Zend Technologies
+10.11.14-MariaDB-0ubuntu0.24.04.1
+net.ipv4.ip_forward = 1

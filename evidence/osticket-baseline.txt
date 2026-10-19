@@ -1,0 +1,7 @@
+21
+20
+Lab Drafts - Login	0
+Lab Drafts - DNS	0
+Lab Drafts - Connectivity	0
+Lab Drafts - File Access	0
+define('THIS_VERSION', MAJOR_VERSION.'-git'); //Shown on admin panel

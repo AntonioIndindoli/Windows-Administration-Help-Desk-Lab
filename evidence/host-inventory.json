@@ -1,0 +1,59 @@
+{
+  "CapturedAt": "2026-10-18T15:49:35.4606907-07:00",
+  "Computer": {
+    "Manufacturer": "Gigabyte Technology Co., Ltd.",
+    "Model": "B650 AORUS ELITE AX",
+    "TotalPhysicalMemory": 33407934464,
+    "HypervisorPresent": true
+  },
+  "OS": {
+    "Caption": "Microsoft Windows 11 Home",
+    "Version": "10.0.26200",
+    "FreePhysicalMemory": 14426804
+  },
+  "VirtualBox": "7.2.20r175154",
+  "VMs": [
+    "\"DC01\" {df5d7114-f4be-4939-9f73-ae07ddd2af43}",
+    "\"FS01\" {5468e3fb-48c7-47f7-953c-97b712d8c111}",
+    "\"PC01\" {eae78b2f-3350-4118-bf52-2b2bdb4aef24}",
+    "\"PC02\" {0c360dbd-9418-4271-a6ac-af928d55deb4}",
+    "\"HD01\" {5b995c3b-7ef1-4f9c-aa71-6de6c3b07d19}"
+  ],
+  "Disks": [
+    {
+      "Name": "C",
+      "Used": 658304700416,
+      "Free": 340844503040
+    },
+    {
+      "Name": "D",
+      "Used": 1508177027072,
+      "Free": 492203986944
+    },
+    {
+      "Name": "E",
+      "Used": 479289344,
+      "Free": 127832064
+    },
+    {
+      "Name": "F",
+      "Used": 116600832,
+      "Free": 499314900992
+    },
+    {
+      "Name": "G",
+      "Used": 620909740032,
+      "Free": 1378879877120
+    },
+    {
+      "Name": "H",
+      "Used": 33587200,
+      "Free": 15473803264
+    },
+    {
+      "Name": "Temp",
+      "Used": 658304765952,
+      "Free": 340844503040
+    }
+  ]
+}
