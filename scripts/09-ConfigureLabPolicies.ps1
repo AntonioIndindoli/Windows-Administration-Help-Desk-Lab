@@ -4,7 +4,9 @@
 param()
 $ErrorActionPreference='Stop'
 Import-Module ActiveDirectory
-Install-WindowsFeature GPMC -IncludeManagementTools | Out-Null
+if(-not(Get-Module -ListAvailable GroupPolicy)) {
+    Install-WindowsFeature GPMC -IncludeManagementTools | Out-Null
+}
 Import-Module GroupPolicy
 if($env:COMPUTERNAME -ne 'DC01' -or (Get-ADDomain).DNSRoot -ne 'corp.example.test'){throw 'Lab DC01 only.'}
 $base=(Get-ADDomain).DistinguishedName

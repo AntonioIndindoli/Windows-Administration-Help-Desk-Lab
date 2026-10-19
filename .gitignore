@@ -13,3 +13,4 @@ media/
 .tools/
 __pycache__/
 payload/
+Build/

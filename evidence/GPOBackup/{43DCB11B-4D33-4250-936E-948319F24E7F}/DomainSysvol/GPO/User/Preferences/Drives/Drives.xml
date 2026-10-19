@@ -1,0 +1,35 @@
+<Drives clsid="{8FDDCC1A-0C3C-43CD-A6B4-71A6DF20DA8C}">
+  <Drive userContext="1" clsid="{935D1B74-9CB8-4E3C-9914-7DD559B7A417}" uid="{8596858F-F077-4253-A998-B746ACB8BBE2}" changed="2026-10-18 20:15:55" name="P:" status="P:" image="2" bypassErrors="1">
+    <Properties allDrives="NOCHANGE" persistent="0" action="U" userName="" letter="P" label="Lab Public" useLetter="1" thisDrive="NOCHANGE" path="\\FS01\Public" />
+  </Drive>
+  <Drive userContext="1" clsid="{935D1B74-9CB8-4E3C-9914-7DD559B7A417}" uid="{22227BD4-E5C1-49A2-A570-7A3524DEF6CE}" changed="2026-10-18 20:15:55" name="H:" status="H:" image="2" bypassErrors="1">
+    <Properties allDrives="NOCHANGE" persistent="0" action="U" userName="" letter="H" label="Lab IT" useLetter="1" thisDrive="NOCHANGE" path="\\FS01\IT" />
+    <Filters>
+      <FilterGroup sid="S-1-5-21-1457187763-4240664237-770169304-1104" name="CORP\GG_IT" userContext="1" bool="AND" localGroup="0" primaryGroup="0" not="0" />
+    </Filters>
+  </Drive>
+  <Drive userContext="1" clsid="{935D1B74-9CB8-4E3C-9914-7DD559B7A417}" uid="{7E9D901C-F47B-4E35-8BC1-5A94D9B01643}" changed="2026-10-18 20:15:55" name="H:" status="H:" image="2" bypassErrors="1">
+    <Properties allDrives="NOCHANGE" persistent="0" action="U" userName="" letter="H" label="Lab HR" useLetter="1" thisDrive="NOCHANGE" path="\\FS01\HR" />
+    <Filters>
+      <FilterGroup sid="S-1-5-21-1457187763-4240664237-770169304-1106" name="CORP\GG_HR" userContext="1" bool="AND" localGroup="0" primaryGroup="0" not="0" />
+    </Filters>
+  </Drive>
+  <Drive userContext="1" clsid="{935D1B74-9CB8-4E3C-9914-7DD559B7A417}" uid="{4ECAE3EA-0E11-43C0-A587-DBB937FBC91F}" changed="2026-10-18 20:15:55" name="H:" status="H:" image="2" bypassErrors="1">
+    <Properties allDrives="NOCHANGE" persistent="0" action="U" userName="" letter="H" label="Lab Finance" useLetter="1" thisDrive="NOCHANGE" path="\\FS01\Finance" />
+    <Filters>
+      <FilterGroup sid="S-1-5-21-1457187763-4240664237-770169304-1108" name="CORP\GG_Finance" userContext="1" bool="AND" localGroup="0" primaryGroup="0" not="0" />
+    </Filters>
+  </Drive>
+  <Drive userContext="1" clsid="{935D1B74-9CB8-4E3C-9914-7DD559B7A417}" uid="{773AF683-A974-4295-A25B-3D95438EF653}" changed="2026-10-18 20:15:55" name="H:" status="H:" image="2" bypassErrors="1">
+    <Properties allDrives="NOCHANGE" persistent="0" action="U" userName="" letter="H" label="Lab Sales" useLetter="1" thisDrive="NOCHANGE" path="\\FS01\Sales" />
+    <Filters>
+      <FilterGroup sid="S-1-5-21-1457187763-4240664237-770169304-1110" name="CORP\GG_Sales" userContext="1" bool="AND" localGroup="0" primaryGroup="0" not="0" />
+    </Filters>
+  </Drive>
+  <Drive userContext="1" clsid="{935D1B74-9CB8-4E3C-9914-7DD559B7A417}" uid="{ECC3BAC6-AF4D-4A55-8BA4-1756E1907A13}" changed="2026-10-18 20:15:55" name="H:" status="H:" image="2" bypassErrors="1">
+    <Properties allDrives="NOCHANGE" persistent="0" action="U" userName="" letter="H" label="Lab Operations" useLetter="1" thisDrive="NOCHANGE" path="\\FS01\Operations" />
+    <Filters>
+      <FilterGroup sid="S-1-5-21-1457187763-4240664237-770169304-1112" name="CORP\GG_Operations" userContext="1" bool="AND" localGroup="0" primaryGroup="0" not="0" />
+    </Filters>
+  </Drive>
+</Drives>

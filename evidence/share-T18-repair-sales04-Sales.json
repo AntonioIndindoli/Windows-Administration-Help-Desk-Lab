@@ -1,0 +1,15 @@
+{
+    "time":  "2026-10-18T20:02:49.4799635-07:00",
+    "label":  "T18-repair",
+    "user":  "sales04",
+    "identity":  "CORP\\sales04",
+    "share":  "Sales",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}

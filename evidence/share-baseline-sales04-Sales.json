@@ -1,0 +1,15 @@
+{
+    "time":  "2026-10-18T19:59:28.0893902-07:00",
+    "label":  "baseline",
+    "user":  "sales04",
+    "identity":  "CORP\\sales04",
+    "share":  "Sales",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}

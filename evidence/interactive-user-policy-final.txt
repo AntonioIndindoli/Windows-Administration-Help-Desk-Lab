@@ -1,0 +1,17 @@
+[
+    {
+        "LocalPath":  "P:",
+        "RemotePath":  "\\\\FS01\\Public",
+        "Status":  0
+    },
+    {
+        "LocalPath":  "H:",
+        "RemotePath":  "\\\\FS01\\IT",
+        "Status":  0
+    }
+]
+{
+    "Enabled":  1,
+    "DefaultInboundAction":  4,
+    "DefaultOutboundAction":  2
+}

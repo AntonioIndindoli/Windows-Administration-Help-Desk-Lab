@@ -1,0 +1,39 @@
+[
+    {
+        "Department":  "IT",
+        "Members":  6,
+        "ResourceNesting":  true
+    },
+    {
+        "Department":  "HR",
+        "Members":  6,
+        "ResourceNesting":  true
+    },
+    {
+        "Department":  "Finance",
+        "Members":  6,
+        "ResourceNesting":  true
+    },
+    {
+        "Department":  "Sales",
+        "Members":  6,
+        "ResourceNesting":  true
+    },
+    {
+        "Department":  "Operations",
+        "Members":  6,
+        "ResourceNesting":  true
+    }
+]
+[
+    {
+        "Name":  "_ldap._tcp.dc._msdcs.corp.example.test",
+        "NameTarget":  "dc01.corp.example.test",
+        "Port":  389
+    },
+    {
+        "Name":  "dc01.corp.example.test",
+        "NameTarget":  null,
+        "Port":  null
+    }
+]

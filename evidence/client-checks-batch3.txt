@@ -1,0 +1,32 @@
+{
+    "exercise":  "T13",
+    "time":  "2026-10-18T19:57:44.7253076-07:00",
+    "computer":  "PC01",
+    "status":  "Disabled",
+    "failed_connection":  false,
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true
+}
+{
+    "exercise":  "T14",
+    "time":  "2026-10-18T19:57:48.9379895-07:00",
+    "computer":  "PC01",
+    "dns":  [
+                "10.77.0.20"
+            ],
+    "smb":  false,
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true
+}
+{
+    "exercise":  "T15",
+    "time":  "2026-10-18T19:57:54.9492753-07:00",
+    "computer":  "PC01",
+    "internal":  true,
+    "external":  false,
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true
+}

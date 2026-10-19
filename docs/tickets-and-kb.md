@@ -2,7 +2,7 @@
 
 All exercises start **Not run**. Each entry is both a ticket brief and the source for one FAQ. Proposed causes and repairs are instructor guidance, not observed results. Capture actual diagnostics and test the repair before closing a ticket. Use PC01 unless specified, local console access for network faults, and a dedicated test account. Restore only the change made after each exercise.
 
-## T01 / KB01 — Account locked out
+## T01 / KB01 - Account locked out
 
 **Category:** Login. **User:** it01. **Priority:** Normal.
 
@@ -14,7 +14,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Correct password signs in and lockout does not recur. If locked again, investigate the retry source. No policy rollback needed. **Client FAQ:** Stop retrying old passwords and contact the help desk for identity verification.
 
-## T02 / KB02 — Forgotten password
+## T02 / KB02 - Forgotten password
 
 **Category:** Login. **User:** hr01. **Priority:** Normal.
 
@@ -26,7 +26,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** User signs in, changes the temporary password, and signs in again. Remove any temporary credential record. **Client FAQ:** Request a verified reset; never send passwords in tickets.
 
-## T03 / KB03 — Disabled account
+## T03 / KB03 - Disabled account
 
 **Category:** Login. **User:** finance01. **Priority:** Normal.
 
@@ -38,7 +38,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Enabled is true and a fresh sign-in succeeds. Leave the baseline account enabled. **Client FAQ:** Disabled accounts require help desk review, not repeated password attempts.
 
-## T04 / KB04 — Account expired
+## T04 / KB04 - Account expired
 
 **Category:** Login. **User:** sales01. **Priority:** Normal.
 
@@ -50,7 +50,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Expiration cleared and sign-in succeeds. **Client FAQ:** Provide employment/access authorization when requesting an extension.
 
-## T05 / KB05 — Local account used instead of domain account
+## T05 / KB05 - Local account used instead of domain account
 
 **Category:** Login. **User:** operations01. **Priority:** Low.
 
@@ -62,7 +62,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** `whoami` returns `corp\operations01` and expected domain resources work. No configuration change. **Client FAQ:** Use the domain username format provided at onboarding.
 
-## T06 / KB06 — Client points to the wrong DNS server
+## T06 / KB06 - Client points to the wrong DNS server
 
 **Category:** DNS. **User:** it02. **Priority:** High.
 
@@ -74,7 +74,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Resolve DC01 and LDAP SRV records using default DNS; sign in and reach FS01. **Client FAQ:** Leave managed DNS automatic; public resolvers do not serve internal AD records.
 
-## T07 / KB07 — Incorrect application A record
+## T07 / KB07 - Incorrect application A record
 
 **Category:** DNS. **User:** hr02. **Priority:** Normal.
 
@@ -86,7 +86,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Resolution returns .30 and HTTPS loads the help desk with its trusted certificate. Baseline record restored. **Client FAQ:** Report the exact application hostname when a site becomes unreachable.
 
-## T08 / KB08 — Hosts file overrides DNS
+## T08 / KB08 - Hosts file overrides DNS
 
 **Category:** DNS. **User:** finance02. **Priority:** Normal.
 
@@ -98,7 +98,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Application connects to .30 and the hosts file matches its baseline. **Client FAQ:** Do not add local hostname overrides to fix managed services.
 
-## T09 / KB09 — Negative DNS cache after record creation
+## T09 / KB09 - Negative DNS cache after record creation
 
 **Category:** DNS. **User:** sales02. **Priority:** Low.
 
@@ -110,7 +110,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Fresh resolution returns .30. Delete only the `kbtest` test record afterward. **Client FAQ:** DNS changes can take time; the help desk can verify and refresh local cached results.
 
-## T10 / KB10 — Short hostname fails; FQDN works
+## T10 / KB10 - Short hostname fails; FQDN works
 
 **Category:** DNS. **User:** operations02. **Priority:** Low.
 
@@ -122,7 +122,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Both short name and FQDN resolve to FS01. Restore the original global setting after the exercise. **Client FAQ:** Give the help desk the full server name when only short names fail.
 
-## T11 / KB11 — APIPA / no DHCP lease
+## T11 / KB11 - APIPA / no DHCP lease
 
 **Category:** Connectivity. **User:** it03. **Priority:** High.
 
@@ -134,7 +134,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** .100–.199 lease, /24 mask, DNS .10, AD name resolution. Correct switch restored. **Client FAQ:** Report loss of all internal services; do not assign an arbitrary address.
 
-## T12 / KB12 — Incorrect subnet mask
+## T12 / KB12 - Incorrect subnet mask
 
 **Category:** Connectivity. **User:** hr03. **Priority:** High.
 
@@ -146,7 +146,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Client has /24 lease and reaches DC01 and FS01. Remove temporary DHCP exclusion only after .150 is no longer manually assigned. **Client FAQ:** Keep managed network settings automatic.
 
-## T13 / KB13 — Disabled client network adapter
+## T13 / KB13 - Disabled client network adapter
 
 **Category:** Connectivity. **User:** finance03. **Priority:** High.
 
@@ -158,7 +158,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Adapter Up, DHCP lease present, domain DNS and SMB work. **Client FAQ:** Report whether the network icon indicates a disconnected adapter.
 
-## T14 / KB14 — SMB blocked on one client
+## T14 / KB14 - SMB blocked on one client
 
 **Category:** Connectivity. **User:** sales03. **Priority:** Normal.
 
@@ -170,7 +170,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Port 445 connects and an authorized user opens their share. Confirm injected rule is gone. **Client FAQ:** Report which service fails even if other services still work.
 
-## T15 / KB15 — Invalid default gateway (optional routed lab)
+## T15 / KB15 - Invalid default gateway (optional routed lab)
 
 **Category:** Connectivity. **User:** operations03. **Priority:** Normal.
 
@@ -182,7 +182,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Internal services and the same external HTTPS destination work. If no router exists, mark this exercise pending until the optional routed environment is built. **Client FAQ:** State whether internal services work when reporting internet loss.
 
-## T16 / KB16 — Missing department group membership
+## T16 / KB16 - Missing department group membership
 
 **Category:** File Access. **User:** hr04. **Priority:** Normal.
 
@@ -194,7 +194,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** HR read/create/delete succeeds while Finance access remains denied. Baseline membership restored. **Client FAQ:** Access requests require department authorization and may need a fresh sign-in.
 
-## T17 / KB17 — NTFS permissions missing despite share permission
+## T17 / KB17 - NTFS permissions missing despite share permission
 
 **Category:** File Access. **User:** finance04. **Priority:** Normal.
 
@@ -206,7 +206,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** finance04 creates/edits/deletes a test file; another department is denied. Compare restored ACL with baseline. **Client FAQ:** A visible share can still require folder permission review.
 
-## T18 / KB18 — Share permission missing despite NTFS permission
+## T18 / KB18 - Share permission missing despite NTFS permission
 
 **Category:** File Access. **User:** sales04. **Priority:** Normal.
 
@@ -218,7 +218,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** sales04 can modify a file over SMB; cross-department access fails. Baseline share permission restored. **Client FAQ:** Report the full UNC path and exact access-denied message.
 
-## T19 / KB19 — Stale group token after access granted
+## T19 / KB19 - Stale group token after access granted
 
 **Category:** File Access. **User:** operations04. **Priority:** Low.
 
@@ -230,7 +230,7 @@ All exercises start **Not run**. Each entry is both a ticket brief and the sourc
 
 **Verify / rollback:** Group appears in the token and Operations share works, while unrelated shares remain denied. Ensure original membership remains. **Client FAQ:** Lock/unlock does not reliably refresh newly granted group membership; sign out/in.
 
-## T20 / KB20 — Read-only Public share mistaken for a writable folder
+## T20 / KB20 - Read-only Public share mistaken for a writable folder
 
 **Category:** File Access. **User:** it04. **Priority:** Low.
 

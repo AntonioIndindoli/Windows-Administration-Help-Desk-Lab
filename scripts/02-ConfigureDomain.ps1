@@ -22,7 +22,9 @@ foreach ($dept in 'IT','HR','Finance','Sales','Operations') {
     $resource = "DL_${dept}_Modify"
     if ((Get-ADGroupMember $resource).SamAccountName -notcontains "GG_$dept") { Add-ADGroupMember $resource "GG_$dept" }
 }
-Install-WindowsFeature DHCP -IncludeManagementTools | Out-Null
+if((Get-WindowsFeature DHCP).InstallState -ne 'Installed') {
+    Install-WindowsFeature DHCP -IncludeManagementTools | Out-Null
+}
 Import-Module DhcpServer
 # Creates DHCP Administrators / DHCP Users local security groups if absent.
 & netsh dhcp add securitygroups

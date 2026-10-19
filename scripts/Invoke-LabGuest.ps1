@@ -12,6 +12,7 @@ $passwordFile=Join-Path $root "LabSecrets\$Name.password"
 if($Domain -eq 'CORP'){$passwordFile=Join-Path $root 'LabSecrets\DC01.password'}
 if($CredentialFile){$passwordFile=[IO.Path]::GetFullPath($CredentialFile)}
 if(-not(Test-Path -LiteralPath $passwordFile)){throw 'Guest credential file missing.'}
+$Command='$ProgressPreference="SilentlyContinue"; $ErrorActionPreference="Stop"; '+$Command+'; exit 0'
 $encoded=[Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($Command))
 $runArgs=@('guestcontrol',$Name,'run',"--username=$UserName","--passwordfile=$passwordFile",'--exe=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe',"--timeout=$TimeoutMilliseconds",'--wait-stdout','--wait-stderr')
 if($Domain){$runArgs+="--domain=$Domain"}

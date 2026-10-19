@@ -5,7 +5,7 @@ import re
 root = pathlib.Path(__file__).resolve().parent.parent
 text = (root / 'docs' / 'tickets-and-kb.md').read_text(encoding='utf-8')
 items = []
-for match in re.finditer(r'^## (T\d{2}) / (KB\d{2}) — ([^\n]+)\n(.*?)(?=^## |\Z)', text, re.M | re.S):
+for match in re.finditer(r'^## (T\d{2}) / (KB\d{2}) - ([^\n]+)\n(.*?)(?=^## |\Z)', text, re.M | re.S):
     exercise, kb, title, body = match.groups()
     category = re.search(r'\*\*Category:\*\* ([^.]+)', body).group(1)
     user = re.search(r'\*\*User:\*\* ([^.]+)', body).group(1)

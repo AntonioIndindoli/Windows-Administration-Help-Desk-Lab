@@ -1,0 +1,37 @@
+{
+  "captured": "2026-10-18",
+  "media": [
+    {
+      "file": "WindowsServer2025.iso",
+      "official_source": "https://aka.ms/WinServ2025iso-enus",
+      "bytes": 8152356864,
+      "sha256": "7b052573ba7894c9924e3e87ba732ccd354d18cb75a883efa9b900ea125bfd51",
+      "selected_image": "2: Windows Server 2025 Standard Evaluation, Desktop Experience",
+      "verification": "Official HTTPS download, bounded-range validation, ISO image detection and successful guest installation. This hash is locally computed, not claimed as a publisher signature."
+    },
+    {
+      "file": "Windows11Enterprise.iso",
+      "official_source": "https://www.microsoft.com/evalcenter/evaluate-windows-11-enterprise",
+      "download_redirect_id": "2382600",
+      "bytes": 8225329152,
+      "sha256": "bc3f24086ebadc94489066b5ad78089e2cf5c3491e90e790bb81a2b199c10e38",
+      "selected_image": "1: Windows 11 Enterprise Evaluation",
+      "installed_build": "10.0.26300",
+      "verification": "Official evaluation HTTPS download, ISO image detection and successful guest installation. This hash is locally computed. Evaluation redirects can change over time."
+    },
+    {
+      "file": "UbuntuCloud.vmdk",
+      "official_source": "https://cloud-images.ubuntu.com/noble/",
+      "bytes": 590749696,
+      "sha256": "9a1e3959c9f4ad9d4752101fd4ff9a43191fb7d72e61fa20e033f9fd235ce794",
+      "verification": "Matched the downloaded Canonical SHA256SUMS manifest; cloud-init, SSH and actual guest services verified."
+    }
+  ],
+  "osticket": {
+    "version": "v1.18.4",
+    "upstream_commit": "8d38b0619649a50ee7cbbf37085f5d297fdc6f36",
+    "official_source": "https://github.com/osTicket/osTicket/tree/v1.18.4",
+    "verification": "Source ZIP CRC passed for 2498 entries; upstream deployment and installer ran; application and public/staff functions verified."
+  },
+  "redistribution": "Installation images and VM disks are retained separately on this computer and are excluded from the build ZIP."
+}

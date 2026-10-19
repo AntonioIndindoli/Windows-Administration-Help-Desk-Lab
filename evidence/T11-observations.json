@@ -1,0 +1,20 @@
+{
+    "exercise":  "T11",
+    "time":  "2026-10-18T20:06:07.7226270-07:00",
+    "wrong_switch":  "Lab-NoDHCP",
+    "addresses":  [
+                      {
+                          "IPAddress":  "169.254.126.225",
+                          "PrefixLength":  16
+                      }
+                  ],
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true,
+    "renewed_addresses":  [
+                              {
+                                  "IPAddress":  "10.77.0.100",
+                                  "PrefixLength":  24
+                              }
+                          ]
+}

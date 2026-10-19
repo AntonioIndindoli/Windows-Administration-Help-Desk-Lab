@@ -1,0 +1,9 @@
+
+exercise fault_observed repair_verified baseline_restored
+-------- -------------- --------------- -----------------
+T01                True            True              True
+T02                True            True              True
+T03                True            True              True
+T04                True            True              True
+
+

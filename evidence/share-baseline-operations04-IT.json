@@ -1,0 +1,16 @@
+{
+    "time":  "2026-10-18T19:59:28.3799990-07:00",
+    "label":  "baseline",
+    "user":  "operations04",
+    "identity":  "CORP\\operations04",
+    "share":  "IT",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\IT\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\IT\\Lab-operations04-27fe0a0cb70347989a739537baf6927a.txt\u0027 is denied.\""
+               ]
+}

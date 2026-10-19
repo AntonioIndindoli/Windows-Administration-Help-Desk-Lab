@@ -1,0 +1,141 @@
+{
+    "time":  "2026-10-18T20:01:07.3572359-07:00",
+    "label":  "T16-fault",
+    "user":  "hr04",
+    "identity":  "CORP\\hr04",
+    "share":  "HR",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\HR\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\HR\\Lab-hr04-4d59e3e32be344bc961d45bcf4600fc8.txt\u0027 is denied.\""
+               ]
+}
+{
+    "time":  "2026-10-18T20:01:19.9320603-07:00",
+    "label":  "T16-repair",
+    "user":  "hr04",
+    "identity":  "CORP\\hr04",
+    "share":  "HR",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}
+{
+    "time":  "2026-10-18T20:01:20.8031862-07:00",
+    "label":  "T16-negative",
+    "user":  "hr04",
+    "identity":  "CORP\\hr04",
+    "share":  "Finance",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Finance\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Finance\\Lab-hr04-c706ac1c11b1477e8bbd881247dbbedc.txt\u0027 is denied.\""
+               ]
+}
+{
+    "time":  "2026-10-18T20:01:42.7953839-07:00",
+    "label":  "T17-fault",
+    "user":  "finance04",
+    "identity":  "CORP\\finance04",
+    "share":  "Finance",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Finance\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Finance\\Lab-finance04-c44ca58d227f4655b93e03974563cfae.txt\u0027 is denied.\""
+               ]
+}
+{
+    "time":  "2026-10-18T20:01:59.6190736-07:00",
+    "label":  "T17-repair",
+    "user":  "finance04",
+    "identity":  "CORP\\finance04",
+    "share":  "Finance",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}
+{
+    "time":  "2026-10-18T20:02:00.0096240-07:00",
+    "label":  "T17-negative",
+    "user":  "finance04",
+    "identity":  "CORP\\finance04",
+    "share":  "HR",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\HR\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\HR\\Lab-finance04-c050fbe45899455892faef0c4d6f9e30.txt\u0027 is denied.\""
+               ]
+}
+{
+    "time":  "2026-10-18T20:02:23.4657862-07:00",
+    "label":  "T18-fault",
+    "user":  "sales04",
+    "identity":  "CORP\\sales04",
+    "share":  "Sales",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Sales\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Sales\\Lab-sales04-a3bd5e85b6bd4b159e55b1bbe432175f.txt\u0027 is denied.\""
+               ]
+}
+{
+    "time":  "2026-10-18T20:02:49.4799635-07:00",
+    "label":  "T18-repair",
+    "user":  "sales04",
+    "identity":  "CORP\\sales04",
+    "share":  "Sales",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}
+{
+    "time":  "2026-10-18T20:02:50.5125781-07:00",
+    "label":  "T18-negative",
+    "user":  "sales04",
+    "identity":  "CORP\\sales04",
+    "share":  "HR",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\HR\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\HR\\Lab-sales04-16ac678b878141ec871d9b3d4b9c4cb5.txt\u0027 is denied.\""
+               ]
+}

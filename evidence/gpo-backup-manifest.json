@@ -1,0 +1,27 @@
+[
+    {
+        "DisplayName":  "Default Domain Policy",
+        "GpoId":  "31b2f340-016d-11d2-945f-00c04fb984f9",
+        "CreationTime":  "\/Date(1792379850000)\/"
+    },
+    {
+        "DisplayName":  "Lab-Domain-Account-Policy",
+        "GpoId":  "5b75dffe-45bd-4082-b42d-a6b568342ef3",
+        "CreationTime":  "\/Date(1792379855000)\/"
+    },
+    {
+        "DisplayName":  "Default Domain Controllers Policy",
+        "GpoId":  "6ac1786c-016f-11d2-945f-00c04fb984f9",
+        "CreationTime":  "\/Date(1792379855000)\/"
+    },
+    {
+        "DisplayName":  "Lab-Workstation-Security",
+        "GpoId":  "82670f85-cad3-429b-a0f4-07289ae93c48",
+        "CreationTime":  "\/Date(1792379855000)\/"
+    },
+    {
+        "DisplayName":  "Lab-User-Experience",
+        "GpoId":  "f8459ed9-e1fc-47ab-b476-3eb1396618c6",
+        "CreationTime":  "\/Date(1792379865000)\/"
+    }
+]

@@ -1,0 +1,168 @@
+{
+    "exercise":  "T10",
+    "time":  "2026-10-18T19:59:25.2861315-07:00",
+    "computer":  "PC01",
+    "short":  "*** UnKnown can\u0027t find FS01: Non-existent domain\r\n\r\nServer:  UnKnown\r\nAddress:  10.77.0.10\r\n\r\n",
+    "fqdn":  [
+                 "10.77.0.20"
+             ],
+    "retest":  "Server:  UnKnown\r\nAddress:  10.77.0.10\r\n\r\nName:    FS01.corp.example.test\r\nAddress:  10.77.0.20\r\n\r\n",
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true
+}
+{
+    "time":  "2026-10-18T19:59:27.3657645-07:00",
+    "label":  "baseline",
+    "user":  "it04",
+    "identity":  "CORP\\it04",
+    "share":  "IT",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}
+{
+    "time":  "2026-10-18T19:59:27.5236862-07:00",
+    "label":  "baseline",
+    "user":  "it04",
+    "identity":  "CORP\\it04",
+    "share":  "HR",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\HR\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\HR\\Lab-it04-95735bd8927d4b8390fa487674fdd722.txt\u0027 is denied.\""
+               ]
+}
+{
+    "time":  "2026-10-18T19:59:27.6626990-07:00",
+    "label":  "baseline",
+    "user":  "hr04",
+    "identity":  "CORP\\hr04",
+    "share":  "HR",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}
+{
+    "time":  "2026-10-18T19:59:27.7370573-07:00",
+    "label":  "baseline",
+    "user":  "hr04",
+    "identity":  "CORP\\hr04",
+    "share":  "Finance",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Finance\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Finance\\Lab-hr04-26eb749beaa84ac0a9f8bd0162a076bd.txt\u0027 is denied.\""
+               ]
+}
+{
+    "time":  "2026-10-18T19:59:27.8689264-07:00",
+    "label":  "baseline",
+    "user":  "finance04",
+    "identity":  "CORP\\finance04",
+    "share":  "Finance",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}
+{
+    "time":  "2026-10-18T19:59:27.9591218-07:00",
+    "label":  "baseline",
+    "user":  "finance04",
+    "identity":  "CORP\\finance04",
+    "share":  "Sales",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Sales\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Sales\\Lab-finance04-f0b260935bfd48dc912b962b504ba98c.txt\u0027 is denied.\""
+               ]
+}
+{
+    "time":  "2026-10-18T19:59:28.0893902-07:00",
+    "label":  "baseline",
+    "user":  "sales04",
+    "identity":  "CORP\\sales04",
+    "share":  "Sales",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}
+{
+    "time":  "2026-10-18T19:59:28.1558575-07:00",
+    "label":  "baseline",
+    "user":  "sales04",
+    "identity":  "CORP\\sales04",
+    "share":  "Operations",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Operations\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Operations\\Lab-sales04-7c933233670746d7a4cd96db8f1e81d6.txt\u0027 is denied.\""
+               ]
+}
+{
+    "time":  "2026-10-18T19:59:28.2844424-07:00",
+    "label":  "baseline",
+    "user":  "operations04",
+    "identity":  "CORP\\operations04",
+    "share":  "Operations",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}
+{
+    "time":  "2026-10-18T19:59:28.3799990-07:00",
+    "label":  "baseline",
+    "user":  "operations04",
+    "identity":  "CORP\\operations04",
+    "share":  "IT",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\IT\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\IT\\Lab-operations04-27fe0a0cb70347989a739537baf6927a.txt\u0027 is denied.\""
+               ]
+}

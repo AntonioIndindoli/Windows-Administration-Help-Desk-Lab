@@ -1,0 +1,15 @@
+{
+    "time":  "2026-10-18T19:59:27.6626990-07:00",
+    "label":  "baseline",
+    "user":  "hr04",
+    "identity":  "CORP\\hr04",
+    "share":  "HR",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}

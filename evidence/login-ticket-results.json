@@ -1,0 +1,50 @@
+[
+    {
+        "exercise":  "T01",
+        "fault_observed":  true,
+        "repair_verified":  true,
+        "baseline_restored":  true,
+        "symptom":  "Correct domain credentials rejected after five failed authentication attempts.",
+        "cause":  "The configured account-lockout threshold was reached.",
+        "resolution":  "Verified the test identity and account state, unlocked it01, then authenticated with the correct credential.",
+        "verification":  "LockedOut changed from true to false and Windows network logon returned success.",
+        "evidence":  "evidence/login-ticket-observations.json",
+        "client_guidance":  "Stop retrying old passwords and ask the help desk for verified assistance."
+    },
+    {
+        "exercise":  "T02",
+        "fault_observed":  true,
+        "repair_verified":  true,
+        "baseline_restored":  true,
+        "symptom":  "The requester could not authenticate with the old credential.",
+        "cause":  "The submitted credential no longer matched the account password.",
+        "resolution":  "Reset to a unique temporary credential with change required, then completed an authenticated user password change.",
+        "verification":  "Old credential failed, NetUserChangePassword returned zero and the replacement credential authenticated successfully.",
+        "evidence":  "evidence/login-ticket-observations.json",
+        "client_guidance":  "Request a verified reset and keep passwords out of support tickets."
+    },
+    {
+        "exercise":  "T03",
+        "fault_observed":  true,
+        "repair_verified":  true,
+        "baseline_restored":  true,
+        "symptom":  "Domain authentication failed for an otherwise correct credential.",
+        "cause":  "The test account was disabled.",
+        "resolution":  "Checked the approved lab account state and enabled finance01.",
+        "verification":  "Disabled account authentication failed; after enabling, the same credential succeeded.",
+        "evidence":  "evidence/login-ticket-observations.json",
+        "client_guidance":  "Disabled accounts require an account-lifecycle review by the help desk."
+    },
+    {
+        "exercise":  "T04",
+        "fault_observed":  true,
+        "repair_verified":  true,
+        "baseline_restored":  true,
+        "symptom":  "Domain authentication failed after the account expiration date.",
+        "cause":  "The lab account expiration was in the past.",
+        "resolution":  "Reviewed expiration and cleared it for this permanent test account.",
+        "verification":  "Expired account rejected authentication; cleared expiration and successful network logon confirmed recovery.",
+        "evidence":  "evidence/login-ticket-observations.json",
+        "client_guidance":  "Provide the relevant access authorization when requesting an account extension."
+    }
+]

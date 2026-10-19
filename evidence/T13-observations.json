@@ -1,0 +1,10 @@
+{
+    "exercise":  "T13",
+    "time":  "2026-10-18T19:57:44.7253076-07:00",
+    "computer":  "PC01",
+    "status":  "Disabled",
+    "failed_connection":  false,
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true
+}

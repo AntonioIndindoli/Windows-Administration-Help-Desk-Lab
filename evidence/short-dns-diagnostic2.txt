@@ -1,0 +1,7 @@
+10.77.0.20
+{
+    "SuffixSearchList":  [
+                             "corp.example.test"
+                         ],
+    "UseSuffixSearchList":  true
+}

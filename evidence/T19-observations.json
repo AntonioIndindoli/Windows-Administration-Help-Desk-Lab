@@ -1,0 +1,35 @@
+{
+    "exercise":  "T19",
+    "time":  "2026-10-18T20:03:19.1418286-07:00",
+    "before_grant":  {
+                         "identity":  "CORP\\operations04",
+                         "allowed":  false,
+                         "groups":  [
+                                        "S-1-5-21-1457187763-4240664237-770169304-513",
+                                        "S-1-1-0",
+                                        "S-1-5-32-545",
+                                        "S-1-5-4",
+                                        "S-1-2-1",
+                                        "S-1-5-11",
+                                        "S-1-5-15",
+                                        "S-1-18-1"
+                                    ]
+                     },
+    "after_grant_old_token":  {
+                                  "identity":  "CORP\\operations04",
+                                  "allowed":  false,
+                                  "groups":  [
+                                                 "S-1-5-21-1457187763-4240664237-770169304-513",
+                                                 "S-1-1-0",
+                                                 "S-1-5-32-545",
+                                                 "S-1-5-4",
+                                                 "S-1-2-1",
+                                                 "S-1-5-11",
+                                                 "S-1-5-15",
+                                                 "S-1-18-1"
+                                             ]
+                              },
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true
+}

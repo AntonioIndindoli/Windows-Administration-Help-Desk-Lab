@@ -31,6 +31,8 @@ $password=$null
 $aux=Join-Path $secrets "$Name-setup-"
 $postCommand=@'
 & net.exe user Administrator /active:yes
+Set-Service VBoxService -StartupType Automatic
+Start-Service VBoxService
 $key='HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon'
 Set-ItemProperty -Path $key -Name AutoAdminLogon -Value '0'
 Remove-ItemProperty -Path $key -Name DefaultPassword,ForceAutoLogon -ErrorAction SilentlyContinue

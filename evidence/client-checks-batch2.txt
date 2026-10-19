@@ -1,0 +1,18 @@
+{
+    "exercise":  "T12",
+    "time":  "2026-10-18T19:58:58.7587213-07:00",
+    "computer":  "PC01",
+    "wrong_prefix":  30,
+    "dc_tcp389":  false,
+    "retest":  true,
+    "addresses":  [
+                      {
+                          "IPAddress":  "10.77.0.100",
+                          "PrefixLength":  24,
+                          "PrefixOrigin":  3
+                      }
+                  ],
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true
+}

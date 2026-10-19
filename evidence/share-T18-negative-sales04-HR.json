@@ -1,0 +1,16 @@
+{
+    "time":  "2026-10-18T20:02:50.5125781-07:00",
+    "label":  "T18-negative",
+    "user":  "sales04",
+    "identity":  "CORP\\sales04",
+    "share":  "HR",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\HR\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\HR\\Lab-sales04-16ac678b878141ec871d9b3d4b9c4cb5.txt\u0027 is denied.\""
+               ]
+}

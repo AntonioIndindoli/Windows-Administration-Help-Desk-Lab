@@ -1,0 +1,26 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261018193005
+Username: DC01\Administrator
+RunAs User: DC01\Administrator
+Configuration Name: 
+Machine: DC01 (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -EncodedCommand JABQAHIAbwBnAHIAZQBzAHMAUAByAGUAZgBlAHIAZQBuAGMAZQA9ACIAUwBpAGwAZQBuAHQAbAB5AEMAbwBuAHQAaQBuAHUAZQAiADsAIAAkAEUAcgByAG8AcgBBAGMAdABpAG8AbgBQAHIAZQBmAGUAcgBlAG4AYwBlAD0AIgBTAHQAbwBwACIAOwAgACYAIABDADoAXABMAGEAYgBcAHMAYwByAGkAcAB0AHMAXAAxADAALQBTAHQAYQByAHQATABhAGIARgBvAHIAZQBzAHQALgBwAHMAMQA=
+Process ID: 2076
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\LabEvidence\forest-promotion.txt
+WARNING: A delegation for this DNS server cannot be created because the authoritative parent zone cannot be found or it does not run Windows DNS server. If you are integrating with an existing DNS infrastructure, you should manually create a delegation to this DNS server in the parent zone to ensure reliable name resolution from outside the domain "corp.example.test". Otherwise, no action is required.
+WARNING: A delegation for this DNS server cannot be created because the authoritative parent zone cannot be found or it does not run Windows DNS server. If you are integrating with an existing DNS infrastructure, you should manually create a delegation to this DNS server in the parent zone to ensure reliable name resolution from outside the domain "corp.example.test". Otherwise, no action is required.
+
+**********************
+Windows PowerShell transcript end
+End time: 20261018193530
+**********************

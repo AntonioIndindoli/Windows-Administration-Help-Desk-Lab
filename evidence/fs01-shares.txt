@@ -1,0 +1,45 @@
+{
+    "Name":  "FS01",
+    "Domain":  "corp.example.test",
+    "PartOfDomain":  true
+}
+True
+Created department Modify shares and Public read-only share. Test with ordinary users.
+[
+    {
+        "Name":  "ADMIN$",
+        "Path":  "C:\\WINDOWS"
+    },
+    {
+        "Name":  "C$",
+        "Path":  "C:\\"
+    },
+    {
+        "Name":  "Finance",
+        "Path":  "C:\\LabShares\\Finance"
+    },
+    {
+        "Name":  "HR",
+        "Path":  "C:\\LabShares\\HR"
+    },
+    {
+        "Name":  "IPC$",
+        "Path":  ""
+    },
+    {
+        "Name":  "IT",
+        "Path":  "C:\\LabShares\\IT"
+    },
+    {
+        "Name":  "Operations",
+        "Path":  "C:\\LabShares\\Operations"
+    },
+    {
+        "Name":  "Public",
+        "Path":  "C:\\LabShares\\Public"
+    },
+    {
+        "Name":  "Sales",
+        "Path":  "C:\\LabShares\\Sales"
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "exercise":  "T15",
+    "time":  "2026-10-18T19:57:54.9492753-07:00",
+    "computer":  "PC01",
+    "internal":  true,
+    "external":  false,
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true
+}

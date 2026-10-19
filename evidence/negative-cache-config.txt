@@ -1,0 +1,107 @@
+{
+    "exercise":  "T09",
+    "time":  "2026-10-18T20:09:02.7004848-07:00",
+    "initial_nxdomain":  true,
+    "negative_cache":  [
+                           {
+                               "Entry":  "kbtest.corp.example.test",
+                               "Status":  9003,
+                               "Type":  255,
+                               "TimeToLive":  0
+                           }
+                       ],
+    "authoritative":  [
+                          {
+                              "value":  "10.77.0.30",
+                              "PSComputerName":  "DC01",
+                              "RunspaceId":  "61c30524-57a6-4d87-820c-b56178717421",
+                              "PSShowComputerName":  true
+                          }
+                      ],
+    "fault_observed":  false,
+    "repair_verified":  false,
+    "baseline_restored":  true
+}
+{
+    "exercise":  "T11",
+    "time":  "2026-10-18T20:06:07.7226270-07:00",
+    "wrong_switch":  "Lab-NoDHCP",
+    "addresses":  [
+                      {
+                          "IPAddress":  "169.254.126.225",
+                          "PrefixLength":  16
+                      }
+                  ],
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true,
+    "renewed_addresses":  [
+                              {
+                                  "IPAddress":  "10.77.0.100",
+                                  "PrefixLength":  24
+                              }
+                          ]
+}
+{
+    "MaxNegativeCacheTtl":  null,
+    "MaxCacheTtl":  null,
+    "NegativeSOACacheTime":  null,
+    "NetFailureCacheTime":  null
+}
+{
+    "MinimumTimeToLive":  {
+                              "Ticks":  36000000000,
+                              "Days":  0,
+                              "Hours":  1,
+                              "Milliseconds":  0,
+                              "Minutes":  0,
+                              "Seconds":  0,
+                              "TotalDays":  0.041666666666666664,
+                              "TotalHours":  1,
+                              "TotalMilliseconds":  3600000,
+                              "TotalMinutes":  60,
+                              "TotalSeconds":  3600
+                          },
+    "ExpireLimit":  {
+                        "Ticks":  864000000000,
+                        "Days":  1,
+                        "Hours":  0,
+                        "Milliseconds":  0,
+                        "Minutes":  0,
+                        "Seconds":  0,
+                        "TotalDays":  1,
+                        "TotalHours":  24,
+                        "TotalMilliseconds":  86400000,
+                        "TotalMinutes":  1440,
+                        "TotalSeconds":  86400
+                    },
+    "RefreshInterval":  {
+                            "Ticks":  9000000000,
+                            "Days":  0,
+                            "Hours":  0,
+                            "Milliseconds":  0,
+                            "Minutes":  15,
+                            "Seconds":  0,
+                            "TotalDays":  0.010416666666666666,
+                            "TotalHours":  0.25,
+                            "TotalMilliseconds":  900000,
+                            "TotalMinutes":  15,
+                            "TotalSeconds":  900
+                        },
+    "RetryDelay":  {
+                       "Ticks":  6000000000,
+                       "Days":  0,
+                       "Hours":  0,
+                       "Milliseconds":  0,
+                       "Minutes":  10,
+                       "Seconds":  0,
+                       "TotalDays":  0.0069444444444444441,
+                       "TotalHours":  0.16666666666666666,
+                       "TotalMilliseconds":  600000,
+                       "TotalMinutes":  10,
+                       "TotalSeconds":  600
+                   },
+    "PSComputerName":  "DC01",
+    "RunspaceId":  "ad4c4399-1615-4cbd-bd82-e1a142d9926e",
+    "PSShowComputerName":  true
+}

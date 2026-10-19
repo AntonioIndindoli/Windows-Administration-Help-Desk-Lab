@@ -1,0 +1,12 @@
+[
+    {
+        "LocalPath":  "P:",
+        "RemotePath":  "\\\\FS01\\Public",
+        "Status":  0
+    },
+    {
+        "LocalPath":  "H:",
+        "RemotePath":  "\\\\FS01\\IT",
+        "Status":  0
+    }
+]

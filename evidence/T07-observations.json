@@ -1,0 +1,14 @@
+{
+    "exercise":  "T07",
+    "time":  "2026-10-18T20:06:50.7319949-07:00",
+    "wrong_addresses":  [
+                            "10.77.0.99"
+                        ],
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true,
+    "restored_addresses":  [
+                               "10.77.0.30"
+                           ],
+    "https_status":  200
+}

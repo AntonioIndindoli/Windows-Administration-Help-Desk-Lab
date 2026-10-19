@@ -1,0 +1,15 @@
+
+
+wsmid           : http://schemas.dmtf.org/wbem/wsman/identity/1/wsmanidentity.xsd
+ProtocolVersion : http://schemas.dmtf.org/wbem/wsman/1/wsman.xsd
+ProductVendor   : Microsoft Corporation
+ProductVersion  : OS: 0.0.0 SP: 0.0 Stack: 3.0
+
+DNS_ERROR_RCODE_NAME_ERROR,Microsoft.DnsClient.Commands.ResolveDnsName
+{
+    "Entry":  "kbtest.corp.example.test",
+    "Status":  9003,
+    "Type":  255,
+    "TimeToLive":  0,
+    "Data":  null
+}

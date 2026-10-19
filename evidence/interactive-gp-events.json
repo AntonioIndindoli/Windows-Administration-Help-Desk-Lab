@@ -1,0 +1,227 @@
+[
+    {
+        "TimeCreated":  "\/Date(1792380043197)\/",
+        "Id":  6339,
+        "Message":  "Group Policy Winlogon Start Shell handling completed."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380043197)\/",
+        "Id":  5324,
+        "Message":  "Group Policy received the notification StartShell from Winlogon for session 1."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380042850)\/",
+        "Id":  5351,
+        "Message":  "Group policy session returned to winlogon."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380042850)\/",
+        "Id":  6338,
+        "Message":  "Group Policy Winlogon status reporting has completed."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380042850)\/",
+        "Id":  5117,
+        "Message":  "Group policy session completed successfully."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380042791)\/",
+        "Id":  8001,
+        "Message":  "Completed user logon policy processing for CORP\\it04 in 2 seconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380042753)\/",
+        "Id":  5016,
+        "Message":  "Completed Group Policy Drive Maps Extension Processing in 672 milliseconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380042023)\/",
+        "Id":  4016,
+        "Message":  "Starting Group Policy Drive Maps Extension Processing. \r\n\r\nList of applicable Group Policy objects: (Changes were detected.)\r\n\r\nLab-User-Experience\n"
+    },
+    {
+        "TimeCreated":  "\/Date(1792380042012)\/",
+        "Id":  5320,
+        "Message":  "Finished checking for non-system extensions."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380042012)\/",
+        "Id":  5320,
+        "Message":  "Service configuration update to standalone is not required and will be skipped."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380042012)\/",
+        "Id":  5320,
+        "Message":  "Checking for Group Policy client extensions that are not part of the system."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040496)\/",
+        "Id":  5313,
+        "Message":  "The following Group Policy objects were not applicable because they were filtered out : \r\n\r\nLocal Group Policy\n\tNot Applied (Empty)\n"
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040496)\/",
+        "Id":  5312,
+        "Message":  "List of applicable Group Policy objects: \r\n\r\nLab-User-Experience\n"
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040494)\/",
+        "Id":  5126,
+        "Message":  "Group Policy successfully got applicable GPOs from the domain controller."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040492)\/",
+        "Id":  5257,
+        "Message":  "Successfully completed downloading policies."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040492)\/",
+        "Id":  5017,
+        "Message":  "The system calls to access specified file completed. \r\n\\\\corp.example.test\\SysVol\\corp.example.test\\Policies\\{F8459ED9-E1FC-47AB-B476-3EB1396618C6}\\gpt.ini\r\nThe call completed in 47 milliseconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040447)\/",
+        "Id":  4017,
+        "Message":  "Making system calls to access specified file. \r\n\\\\corp.example.test\\SysVol\\corp.example.test\\Policies\\{F8459ED9-E1FC-47AB-B476-3EB1396618C6}\\gpt.ini"
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040446)\/",
+        "Id":  5314,
+        "Message":  "A fast link was detected. The Estimated bandwidth is 1000000 kbps. The slow link threshold is 500 kbps."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040446)\/",
+        "Id":  5327,
+        "Message":  "Estimated network bandwidth on one of the connections: 125000000 kbps."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040426)\/",
+        "Id":  4257,
+        "Message":  "Starting to download policies."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040426)\/",
+        "Id":  4126,
+        "Message":  "Group Policy receiving applicable GPOs from the domain controller."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040426)\/",
+        "Id":  5311,
+        "Message":  "The loopback policy processing mode is \"No loopback mode\"."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040419)\/",
+        "Id":  5310,
+        "Message":  "Account details: \r\n\tAccount Name : CN=Taylor Chen,OU=LabUsers,DC=corp,DC=example,DC=test\r\n\tAccount Domain Name : CORP.EXAMPLE.TEST\r\n\tDC Name : \\\\dc01.corp.example.test\r\n\tDC Domain Name : CORP.EXAMPLE.TEST"
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040419)\/",
+        "Id":  5309,
+        "Message":  "Computer details: \r\n\tComputer role : 2\r\n\tNetwork name : "
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040419)\/",
+        "Id":  5326,
+        "Message":  "Group Policy successfully discovered the Domain Controller in 16 milliseconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040419)\/",
+        "Id":  5308,
+        "Message":  "Domain Controller details: \r\n\tDomain Controller Name : dc01.corp.example.test\r\n\tDomain Controller IP Address : 10.77.0.10"
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040419)\/",
+        "Id":  5017,
+        "Message":  "The LDAP call to connect and bind to Active Directory completed. \r\ndc01.corp.example.test\r\nThe call completed in 16 milliseconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040411)\/",
+        "Id":  4017,
+        "Message":  "Making LDAP calls to connect and bind to Active Directory. \r\ndc01.corp.example.test"
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040409)\/",
+        "Id":  5320,
+        "Message":  "Retrieving Domain Controller details."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040409)\/",
+        "Id":  4326,
+        "Message":  "Group Policy is trying to discover the Domain Controller information."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040259)\/",
+        "Id":  5320,
+        "Message":  "Retrieved account information."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040259)\/",
+        "Id":  5017,
+        "Message":  "The system call to get account information completed. \r\nCN=Taylor Chen,OU=LabUsers,DC=corp,DC=example,DC=test\r\nThe call completed in 0 milliseconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040259)\/",
+        "Id":  4017,
+        "Message":  "Making system call to get account information. \r\n"
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040259)\/",
+        "Id":  5320,
+        "Message":  "Attempting to retrieve the account information."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040221)\/",
+        "Id":  5340,
+        "Message":  "The Group Policy processing mode is Foreground synchronous."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040221)\/",
+        "Id":  4001,
+        "Message":  "Starting user logon Policy processing for CORP\\it04. \r\nActivity id: {1cca595f-5d72-4aad-8f6a-128b8f0260b6}"
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040219)\/",
+        "Id":  4117,
+        "Message":  "Group Policy Session started."
+    },
+    {
+        "TimeCreated":  "\/Date(1792380040205)\/",
+        "Id":  5324,
+        "Message":  "Group Policy received the notification Logon from Winlogon for session 1."
+    },
+    {
+        "TimeCreated":  "\/Date(1792379817191)\/",
+        "Id":  5321,
+        "Message":  "GP Refresh Attribution Parameter: Group Policy refresh. Target=User ParentProcess=\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ParentPID=3496 GPUpdatePID=5240 SessionID=0 Account=\"CORP\\it04\""
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420696)\/",
+        "Id":  5321,
+        "Message":  "GP Refresh Attribution Parameter: Group Policy refresh. Target=User ParentProcess=\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ParentPID=5172 GPUpdatePID=3028 SessionID=0 Account=\"CORP\\Administrator\""
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420687)\/",
+        "Id":  8004,
+        "Message":  "Completed manual processing of policy for computer CORP\\PC01$ in 0 seconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420663)\/",
+        "Id":  5016,
+        "Message":  "Completed Security Extension Processing in 453 milliseconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420313)\/",
+        "Id":  4016,
+        "Message":  "Starting Security Extension Processing. \r\n\r\nList of applicable Group Policy objects: (Changes were detected.)\r\n\r\nDefault Domain Policy\n"
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420296)\/",
+        "Id":  5016,
+        "Message":  "Completed Registry Extension Processing in 47 milliseconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420255)\/",
+        "Id":  4016,
+        "Message":  "Starting Registry Extension Processing. \r\n\r\nList of applicable Group Policy objects: (Changes were detected.)\r\n\r\nLab-Workstation-Security\n"
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "exercise":  "T10",
+    "time":  "2026-10-18T19:59:25.2861315-07:00",
+    "computer":  "PC01",
+    "short":  "*** UnKnown can\u0027t find FS01: Non-existent domain\r\n\r\nServer:  UnKnown\r\nAddress:  10.77.0.10\r\n\r\n",
+    "fqdn":  [
+                 "10.77.0.20"
+             ],
+    "retest":  "Server:  UnKnown\r\nAddress:  10.77.0.10\r\n\r\nName:    FS01.corp.example.test\r\nAddress:  10.77.0.20\r\n\r\n",
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true
+}

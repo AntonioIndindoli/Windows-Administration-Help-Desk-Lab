@@ -1,0 +1,4 @@
+{
+    "IPAddress":  "169.254.126.225",
+    "PrefixLength":  16
+}

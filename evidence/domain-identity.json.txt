@@ -1,0 +1,25 @@
+{
+    "DNSRoot":  "corp.example.test",
+    "NetBIOSName":  "CORP",
+    "DomainMode":  10,
+    "DistinguishedName":  "DC=corp,DC=example,DC=test"
+}
+{
+    "Name":  "DC01",
+    "Domain":  "corp.example.test",
+    "DomainRole":  5
+}
+[
+    {
+        "Name":  "DNS",
+        "Status":  4
+    },
+    {
+        "Name":  "Netlogon",
+        "Status":  4
+    },
+    {
+        "Name":  "NTDS",
+        "Status":  4
+    }
+]

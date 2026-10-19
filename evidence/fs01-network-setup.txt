@@ -1,0 +1,11 @@
+{
+    "InterfaceAlias":  "Ethernet",
+    "IPv4":  {
+                 "value":  [
+                               "169.254.29.14",
+                               "10.77.0.20"
+                           ],
+                 "Count":  2
+             },
+    "Gateway":  "10.77.0.1"
+}

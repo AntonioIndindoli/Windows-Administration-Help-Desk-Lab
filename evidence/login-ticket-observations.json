@@ -1,0 +1,76 @@
+[
+    {
+        "exercise":  "T01",
+        "time":  "2026-10-18T19:43:39.1577186-07:00",
+        "user":  "it01",
+        "failed_attempts":  [
+                                {
+                                    "Success":  false,
+                                    "Win32Error":  1326
+                                },
+                                {
+                                    "Success":  false,
+                                    "Win32Error":  1326
+                                },
+                                {
+                                    "Success":  false,
+                                    "Win32Error":  1326
+                                },
+                                {
+                                    "Success":  false,
+                                    "Win32Error":  1326
+                                },
+                                {
+                                    "Success":  false,
+                                    "Win32Error":  1326
+                                }
+                            ],
+        "locked_before_repair":  true,
+        "retest":  {
+                       "Success":  true,
+                       "Win32Error":  0
+                   }
+    },
+    {
+        "exercise":  "T02",
+        "time":  "2026-10-18T19:43:40.0801020-07:00",
+        "user":  "hr01",
+        "old_credential_rejected":  {
+                                        "Success":  false,
+                                        "Win32Error":  1326
+                                    },
+        "password_change_status":  0,
+        "retest":  {
+                       "Success":  true,
+                       "Win32Error":  0
+                   }
+    },
+    {
+        "exercise":  "T03",
+        "time":  "2026-10-18T19:43:40.3062004-07:00",
+        "user":  "finance01",
+        "disabled_before_repair":  true,
+        "failure":  {
+                        "Success":  false,
+                        "Win32Error":  1331
+                    },
+        "retest":  {
+                       "Success":  true,
+                       "Win32Error":  0
+                   }
+    },
+    {
+        "exercise":  "T04",
+        "time":  "2026-10-18T19:43:40.4822705-07:00",
+        "user":  "sales01",
+        "expired_before_repair":  true,
+        "failure":  {
+                        "Success":  false,
+                        "Win32Error":  1793
+                    },
+        "retest":  {
+                       "Success":  true,
+                       "Win32Error":  0
+                   }
+    }
+]

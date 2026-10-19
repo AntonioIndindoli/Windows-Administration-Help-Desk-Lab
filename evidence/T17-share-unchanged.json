@@ -1,0 +1,10 @@
+[
+    {
+        "AccountName":  "CORP\\Domain Admins",
+        "AccessRight":  0
+    },
+    {
+        "AccountName":  "CORP\\DL_Finance_Modify",
+        "AccessRight":  1
+    }
+]

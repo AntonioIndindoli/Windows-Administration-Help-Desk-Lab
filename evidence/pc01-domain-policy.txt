@@ -1,0 +1,19 @@
+{
+    "Name":  "PC01",
+    "Domain":  "corp.example.test",
+    "PartOfDomain":  true
+}
+True
+Updating policy...
+
+
+
+Computer Policy update has completed successfully.
+
+User Policy update has completed successfully.
+
+
+
+{
+    "InactivityTimeoutSecs":  900
+}

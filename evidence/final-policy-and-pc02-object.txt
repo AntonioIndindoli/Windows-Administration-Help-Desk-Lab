@@ -1,0 +1,10 @@
+{
+    "MinPasswordLength":  14,
+    "ComplexityEnabled":  true,
+    "PasswordHistoryCount":  24,
+    "LockoutThreshold":  5
+}
+{
+    "Name":  "PC02",
+    "DistinguishedName":  "CN=PC02,OU=Workstations,DC=corp,DC=example,DC=test"
+}

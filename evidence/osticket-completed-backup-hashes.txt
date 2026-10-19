@@ -1,0 +1,2 @@
+14e31b9518c7027e00f356dec265c31eda0b1b8fde0c549bc88f3739b20362ff  /root/lab-secrets/osticket-completed.sql
+081bbafb3bca7d3878e6d255e2d81ea4aea98bb09d6341639ee635ded8e967dd  /root/lab-secrets/osticket-application-completed.tar.gz

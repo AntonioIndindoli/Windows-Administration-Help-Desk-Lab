@@ -1,0 +1,30 @@
+{
+    "time":  "2026-10-18T19:58:32.3541599-07:00",
+    "label":  "baseline",
+    "user":  "it04",
+    "identity":  "CORP\\it04",
+    "share":  "IT",
+    "expected":  "Modify",
+    "read":  true,
+    "write":  true,
+    "test_file_removed":  true,
+    "pass":  true,
+    "errors":  [
+
+               ]
+}
+{
+    "time":  "2026-10-18T19:58:32.5888028-07:00",
+    "label":  "T20",
+    "user":  "it04",
+    "identity":  "CORP\\it04",
+    "share":  "Public",
+    "expected":  "ReadOnly",
+    "read":  true,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Public\\Lab-it04-bf3e4d682419403f9fbf96e4222f18f7.txt\u0027 is denied.\""
+               ]
+}

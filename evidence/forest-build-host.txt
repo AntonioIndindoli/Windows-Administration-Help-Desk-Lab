@@ -1,0 +1,8 @@
+Transcript started, output file is C:\LabEvidence\forest-promotion.txt
+
+Message                          Context           RebootRequired  Status
+-------                          -------           --------------  ------
+Operation completed successfully DCPromo.General.3          False Success
+Transcript stopped, output file is C:\LabEvidence\forest-promotion.txt
+
+

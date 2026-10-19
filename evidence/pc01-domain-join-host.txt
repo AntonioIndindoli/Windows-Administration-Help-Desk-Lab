@@ -1,0 +1,22 @@
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : corp.example.test
+   Link-local IPv6 Address . . . . . : fe80::2945:af5d:a5f6:5c80%5
+   IPv4 Address. . . . . . . . . . . : 10.77.0.100
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 10.77.0.1
+
+Name                                     Type   TTL   Section    NameTarget                     Priority Weight Port
+----                                     ----   ---   -------    ----------                     -------- ------ ----
+_ldap._tcp.dc._msdcs.corp.example.test   SRV    600   Answer     dc01.corp.example.test         0        100    389 
+
+Name       : dc01.corp.example.test
+QueryType  : A
+TTL        : 3600
+Section    : Additional
+IP4Address : 10.77.0.10
+

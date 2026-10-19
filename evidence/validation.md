@@ -1,63 +1,64 @@
-# Actual validation register
-
-Status: PARTIAL DEPLOYMENT, 2026-10-18 (America/Los_Angeles). Oracle VirtualBox 7.2.20 installed successfully through winget. Five isolated VMs created and registered; Ubuntu is deployed on HD01 and its web/database services are healthy. Windows guest installations and live AD/ticket validation remain pending media download/installation. The initial DC01 power-on test verified the empty VM only.
-
-## Observed host and deployment results
-
-- Host OS: Windows 11 Home, build 10.0.26200; physical memory 33,407,934,464 bytes (31.1 GiB). HypervisorPresent reported true.
-- Initial C: free space: 342,825,709,568 bytes (319.3 GiB). Available RAM varied from approximately 10 GiB to 7.8 GiB; guest installation must be staged.
-- Session is not an elevated administrator. Initial sandbox CIM access failed; approved host inspection succeeded outside the sandbox. Hyper-V management module absent.
-- `winget install --id Oracle.VirtualBox --exact --source winget --accept-package-agreements --accept-source-agreements --silent --disable-interactivity` returned **Successfully installed**. `VBoxManage --version`: `7.2.20r175154`.
-- Initial VirtualBox VM inventory was empty. Created DC01, FS01, PC01, PC02 (4 GiB RAM, 2 CPUs each), and HD01 (2 GiB RAM, 2 CPUs). Windows VMs use EFI, TPM 2.0 and Secure Boot. Dynamic disks: 64 GiB for each server, 80 GiB per client, 32 GiB for HD01. NIC1 on each uses internal network `HelpDeskLab`; NIC2 disabled; no bridged network.
-- `VBoxManage startvm DC01 --type headless` succeeded and `showvminfo` reported `VMState="running"`. Empty VM then powered off successfully. This verifies host execution only, not a functioning guest OS.
-- Official Microsoft Server and Enterprise evaluation download endpoints responded with HTTP 200 and ISO content lengths 8,152,356,864 and 8,225,329,152 bytes. Initial full-file transfer requests stalled at zero bytes. A bounded Server ISO range request succeeded with HTTP 206 and 1,048,576 bytes; this probe is **not installation media**.
-- Configuration evidence: [VirtualBox inventory](virtualbox-inventory.txt). VM registration and disk creation succeeded using `scripts/00-CreateVirtualBoxVMs.ps1`.
-- HD01 guest OS is now deployed from Canonical's official Ubuntu 24.04 cloud disk. Downloaded 590,749,696 bytes; SHA-256 `9a1e3959c9f4ad9d4752101fd4ff9a43191fb7d72e61fa20e033f9fd235ce794` matches the publisher manifest. See `ubuntu-media-verification.json`.
-- First HD01 boots stalled with the default KVM paravirtualization and with one vCPU/no paravirtualization. VBox logs report `AMD-V is not available`, NEM fallback and `Snail execution mode is active` with the Windows hypervisor present. Retried using three vCPUs and the Hyper-V paravirtualization provider: guest boot and SSH succeeded. Windows VM CPU counts also changed to three before their installation (not yet guest-validated).
-- HD01 cloud-init completed. SSH reports hostname `hd01`, lab0 `10.77.0.30/24` plus router alias `10.77.0.1/24`, and nat0 `10.0.3.15/24`. Apache, MariaDB and lab-router services are active; PHP reports 8.3.6. Host loopback `http://127.0.0.1:8080/` returned HTTP 200 for the default Apache page. **This is not yet an installed osTicket application.** See `hd01-baseline.txt` and `hd01-apache-default.html`.
-- HD01 NAT NIC forwards SSH 2222, HTTP 8080 and HTTPS 8443 on **127.0.0.1 only**. No bridged NICs. Its router alias supports the planned .1 gateway; Windows DHCP/AD are still pending. SSH password authentication disabled; private key stored in ACL-restricted `LabSecrets`.
-- RAM allocations adjusted to DC01 3 GiB, FS01 2 GiB, PC01/PC02 4 GiB each, HD01 2 GiB. After the user freed memory, host available memory was 14,609,640 KiB. See `host-inventory.json` for the captured inventory timestamp.
-
-| Milestone | Date / agent | Actual result | Evidence path / link |
-|---|---|---|---|
-| VM inventory and isolated switch | 2026-10-18 / Codex | PASS: five VM shells; internal HelpDeskLab network; DC01 boot smoke test passed. Guest OS installation pending. | virtualbox-inventory.txt |
-| AD forest and DNS health | | Not run | |
-| DHCP options and two client leases | | Not run | |
-| 30 users and group membership | | Not run | |
-| Three domain joins | | Not run | |
-| GPO resultant settings | | Not run | |
-| Five positive and five negative share tests | | Not run | |
-| Public read/write denial | | Not run | |
-| osTicket deployment and FAQ visibility | 2026-10-18 / Codex | PARTIAL PASS: app installed; strict CA/hostname TLS check returns HTTP 200. Twenty exercise tickets open, twenty FAQs private/unverified. Staff login PASS via trusted HTTPS; published client FAQ checks pending. | osticket-baseline.txt; osticket-ticket-manifest.json; osticket-client-home.html |
-| Backup/restore | 2026-10-18 / Codex | PARTIAL PASS: HD01 Ubuntu-Web-Ready snapshot taken after clean shutdown; marker created, snapshot restored, marker absent; cloud-init done and three services active. osTicket database/application backup still pending. | hd01-restore-test.txt |
-
-## Ticket completion
-
-| Exercise | osTicket ID / URL | FAQ URL | Actual cause / fix / verification evidence | Closed date |
-|---|---|---|---|---|
-| T01 | [309263](https://127.0.0.1:8443/scp/tickets.php?id=2) | Private draft FAQ 1 | OPEN — no live Windows fault/retest yet | |
-| T02 | [362597](https://127.0.0.1:8443/scp/tickets.php?id=3) | Private draft FAQ 2 | OPEN — no live Windows fault/retest yet | |
-| T03 | [907575](https://127.0.0.1:8443/scp/tickets.php?id=4) | Private draft FAQ 3 | OPEN — no live Windows fault/retest yet | |
-| T04 | [180602](https://127.0.0.1:8443/scp/tickets.php?id=5) | Private draft FAQ 4 | OPEN — no live Windows fault/retest yet | |
-| T05 | [114502](https://127.0.0.1:8443/scp/tickets.php?id=6) | Private draft FAQ 5 | OPEN — no live Windows fault/retest yet | |
-| T06 | [490643](https://127.0.0.1:8443/scp/tickets.php?id=7) | Private draft FAQ 6 | OPEN — no live Windows fault/retest yet | |
-| T07 | [497707](https://127.0.0.1:8443/scp/tickets.php?id=8) | Private draft FAQ 7 | OPEN — no live Windows fault/retest yet | |
-| T08 | [784878](https://127.0.0.1:8443/scp/tickets.php?id=9) | Private draft FAQ 8 | OPEN — no live Windows fault/retest yet | |
-| T09 | [546639](https://127.0.0.1:8443/scp/tickets.php?id=10) | Private draft FAQ 9 | OPEN — no live Windows fault/retest yet | |
-| T10 | [800590](https://127.0.0.1:8443/scp/tickets.php?id=11) | Private draft FAQ 10 | OPEN — no live Windows fault/retest yet | |
-| T11 | [978281](https://127.0.0.1:8443/scp/tickets.php?id=12) | Private draft FAQ 11 | OPEN — no live Windows fault/retest yet | |
-| T12 | [342687](https://127.0.0.1:8443/scp/tickets.php?id=13) | Private draft FAQ 12 | OPEN — no live Windows fault/retest yet | |
-| T13 | [924720](https://127.0.0.1:8443/scp/tickets.php?id=14) | Private draft FAQ 13 | OPEN — no live Windows fault/retest yet | |
-| T14 | [875136](https://127.0.0.1:8443/scp/tickets.php?id=15) | Private draft FAQ 14 | OPEN — no live Windows fault/retest yet | |
-| T15 | [901233](https://127.0.0.1:8443/scp/tickets.php?id=16) | Private draft FAQ 15 | OPEN — no live Windows fault/retest yet | |
-| T16 | [231786](https://127.0.0.1:8443/scp/tickets.php?id=17) | Private draft FAQ 16 | OPEN — no live Windows fault/retest yet | |
-| T17 | [802439](https://127.0.0.1:8443/scp/tickets.php?id=18) | Private draft FAQ 17 | OPEN — no live Windows fault/retest yet | |
-| T18 | [193262](https://127.0.0.1:8443/scp/tickets.php?id=19) | Private draft FAQ 18 | OPEN — no live Windows fault/retest yet | |
-| T19 | [920659](https://127.0.0.1:8443/scp/tickets.php?id=20) | Private draft FAQ 19 | OPEN — no live Windows fault/retest yet | |
-| T20 | [856842](https://127.0.0.1:8443/scp/tickets.php?id=21) | Private draft FAQ 20 | OPEN — no live Windows fault/retest yet | |
-
-## osTicket deployment verification
-
-Upstream v1.18.4 source archive passed ZIP CRC validation (2,498 entries). Upstream `manage.php deploy --setup` and installer initialized the database; setup directory moved out of the web root and config mode is 640 (root:www-data). Database reads confirm 21 total tickets (one installer welcome ticket plus 20 exercise tickets), 20 FAQ drafts and four private categories. Initial custom CA lacked strict key-usage extensions; regenerated with CA keyCertSign/cRLSign and leaf digitalSignature/keyEncipherment, then Python SSL chain/hostname verification passed with HTTP 200. No TLS verification bypass used for the successful check. Generated admin/database credentials are stored only under restricted LabSecrets and root-only guest storage.
-
-Server media completed: 8,152,356,864 bytes; SHA-256 7b052573ba7894c9924e3e87ba732ccd354d18cb75a883efa9b900ea125bfd51. VirtualBox detected Standard Evaluation Desktop Experience at image index 2; DC01 and FS01 unattended installations started. osTicket admin login is verified in osticket-staff-login.json. A live database dump imported successfully into the separate osticket_restore_test database and matched 21 tickets, 20 FAQs and 1 staff account; see osticket-database-restore-test.txt. Application archive exists in root-only guest backup storage; full application restore and independent off-VM backup copy remain pending.
+# Actual validation register
+
+**Complete - 2026-10-18T20:29:07-07:00.** Five live VirtualBox VMs deployed; 30 domain users provisioned; FS01, PC01 and PC02 joined; 20 support exercises resolved in osTicket with 20 published knowledge-base articles.
+
+The records below describe tests actually performed. Proposed solutions in the exercise guide were not accepted as results. Historical installation-stage observations remain in `deployment-history.md`.
+
+## Acceptance results
+
+| Check | Observed result | Evidence |
+|---|---|---|
+| Domain acceptance | All 19 checks passed: domain, 30 users, LDAP SRV, DHCP authorization/scope/options, department counts/nesting and three computer objects. | [baseline-final.csv](baseline-final.csv) |
+| AD DS/DNS health | dcdiag Advertising, Services and basic DNS tests passed; exit 0. | [dcdiag-final.txt](dcdiag-final.txt) |
+| DHCP | Active authorized .100–.199 scope; PC01 .100 and PC02 .101; /24 mask, DNS .10, gateway .1. | [dhcp-final-leases.json](dhcp-final-leases.json); [DHCP configuration](dhcp-configuration.txt) |
+| Secure domain membership | FS01 and both Windows 11 clients report corp.example.test and successful secure-channel checks. | [FS01](fs01-shares.txt); [PC01](pc01-domain-policy.txt); [PC02](pc02-domain-policy.txt) |
+| Accounts and groups | 30 real users, six in each of five department global groups, nested into five resource groups. All 30 completed authenticated password changes. | [final counts](final-group-counts.json); [password-change status only](onboarding-password-changes.csv) |
+| Account policy | Minimum length 14, complexity enabled, history 24, lockout threshold 5, duration/reset 15 minutes; named domain-root GPO applied. | [final-account-policy.json](final-account-policy.json); [domain GPO](domain-account-gpo.html) |
+| Workstation policy | Both clients have InactivityTimeoutSecs=900; domain firewall enabled, inbound Block and outbound Allow. | [PC01 policy](pc01-domain-policy.txt); [PC02 policy](pc02-domain-policy.txt); [firewall](pc02-final-client-host.txt) |
+| Interactive user policy | Real CORP\it04 console sign-in; user-experience GPO processed successfully; P: maps to Public and H: to IT. Noninteractive Session 0 did not apply these mappings and was not counted. | [mappings](interactive-mappings.json); [events](interactive-gp-events.json); [resultant policy](interactive-user-gpresult.html) |
+| Department permissions | Five ordinary-user own-department create/read/delete checks passed and five other-department checks denied access. | [baseline tests](suffix-and-share-baselines.txt); share-baseline-*.json |
+| Public permissions | it04 read Public, was denied writing there, and could modify IT; no permission broadening. | [Public result](share-T20-it04-Public.json); [IT result](share-baseline-it04-IT.json) |
+| Trusted help desk HTTPS | PC01 and PC02 returned HTTP 200 with the lab CA trusted inside the guests; host Python checks verified CA and hostname. | [PC01](pc01-https.txt); [PC02](pc02-final-client-host.txt); [staff login](osticket-staff-login.json) |
+| osTicket acceptance | 20/20 exercise tickets closed, 20/20 FAQs published; actual article bodies and public cache search verified. One separate installer welcome ticket remains outside the exercises. | [application manifest](osticket-ticket-manifest.json); [public checks](osticket-public-faq-checks.json) |
+| Evaluation licensing | All four Windows guests report LicenseStatus=1 (activated TIMEBASED_EVAL). | *-evaluation-license.json |
+| Installation cleanup | Setup DVDs detached; automatic administrator sign-in disabled; no DefaultPassword registry value; Guest Additions service running on all four Windows guests. | *-setup-cleanup.json |
+| Completed-state backup | Final SQL restored into an independent test database: 21 total tickets, 20 FAQs and 61 thread entries. Application configuration restored and compared. Independent restricted host backup hashes match guest hashes. | [restore](osticket-completed-restore.txt); [guest hashes](osticket-completed-backup-hashes.txt); [host hashes](osticket-completed-host-hashes.json) |
+| Recovery exercise | Earlier HD01 snapshot restored successfully; test marker absent and services active afterward. | [restore observation](hd01-restore-test.txt) |
+| Coordinated recovery set | All five VMs paused together, checkpointed, then resumed. Restore the entire set together. The new set was saved; only the earlier HD01 checkpoint was restore-tested. | [lab-checkpoints.json](lab-checkpoints.json) |
+
+## Ticket resolutions
+
+Each row is backed by observed fault, successful repair/retest and baseline restoration. The ticket contains an internal validation note; its public FAQ contains client guidance.
+
+| Exercise / ticket | Observed cause and repair | Verification / evidence |
+|---|---|---|
+| [T01 / 309263](https://127.0.0.1:8443/scp/tickets.php?id=2) - CLOSED; [KB01](https://127.0.0.1:8443/kb/faq.php?id=1) | The configured account-lockout threshold was reached. Verified the test identity and account state, unlocked it01, then authenticated with the correct credential. | LockedOut changed from true to false and Windows network logon returned success. Evidence: evidence/login-ticket-observations.json. |
+| [T02 / 362597](https://127.0.0.1:8443/scp/tickets.php?id=3) - CLOSED; [KB02](https://127.0.0.1:8443/kb/faq.php?id=2) | The submitted credential no longer matched the account password. Reset to a unique temporary credential with change required, then completed an authenticated user password change. | Old credential failed, NetUserChangePassword returned zero and the replacement credential authenticated successfully. Evidence: evidence/login-ticket-observations.json. |
+| [T03 / 907575](https://127.0.0.1:8443/scp/tickets.php?id=4) - CLOSED; [KB03](https://127.0.0.1:8443/kb/faq.php?id=3) | The test account was disabled. Checked the approved lab account state and enabled finance01. | Disabled account authentication failed; after enabling, the same credential succeeded. Evidence: evidence/login-ticket-observations.json. |
+| [T04 / 180602](https://127.0.0.1:8443/scp/tickets.php?id=5) - CLOSED; [KB04](https://127.0.0.1:8443/kb/faq.php?id=4) | The lab account expiration was in the past. Reviewed expiration and cleared it for this permanent test account. | Expired account rejected authentication; cleared expiration and successful network logon confirmed recovery. Evidence: evidence/login-ticket-observations.json. |
+| [T05 / 114502](https://127.0.0.1:8443/scp/tickets.php?id=6) - CLOSED; [KB05](https://127.0.0.1:8443/kb/faq.php?id=5) | No local operations01 account exists. Used CORP domain credentials. | Windows LogonUser succeeded and token identity was CORP\operations01. Evidence: evidence/T05-observations.json. |
+| [T06 / 490643](https://127.0.0.1:8443/scp/tickets.php?id=7) - CLOSED; [KB06](https://127.0.0.1:8443/kb/faq.php?id=6) | Incorrect adapter DNS server. Reset DNS to the DHCP-provided DC01 address and cleared the cache. | DC01 resolved to 10.77.0.10 after repair. Evidence: evidence/T06-observations.json. |
+| [T07 / 497707](https://127.0.0.1:8443/scp/tickets.php?id=8) - CLOSED; [KB07](https://127.0.0.1:8443/kb/faq.php?id=7) | The application A record was incorrect. Restored only helpdesk to 10.77.0.30 and cleared the client cache. | Client resolution returned .30 and certificate-validated HTTPS returned 200. Evidence: evidence/T07-observations.json. |
+| [T08 / 784878](https://127.0.0.1:8443/scp/tickets.php?id=9) - CLOSED; [KB08](https://127.0.0.1:8443/kb/faq.php?id=8) | An injected hosts-file override took precedence. Restored the exact original hosts-file bytes and cleared DNS cache. | Application resolution returned .30 and HTTPS port connectivity succeeded. Evidence: evidence/T08-observations.json. |
+| [T09 / 546639](https://127.0.0.1:8443/scp/tickets.php?id=10) - CLOSED; [KB09](https://127.0.0.1:8443/kb/faq.php?id=9) | The cache-only query used a stale negative entry. A persistent outage in ordinary lookups was not reproduced on this Windows build. Confirmed the record on DC01, cleared the client cache, then performed a fresh lookup. | Fresh application resolution and a subsequent cache-only lookup both returned .30; the temporary record was removed. The fault was limited to cache-only retrieval. Evidence: evidence/T09-observations.json. |
+| [T10 / 800590](https://127.0.0.1:8443/scp/tickets.php?id=11) - CLOSED; [KB10](https://127.0.0.1:8443/kb/faq.php?id=10) | The suffix search list had been changed to invalid.test. Restored the saved suffix search configuration. | nslookup expanded FS01 to FS01.corp.example.test and returned .20. Evidence: evidence/T10-observations.json. |
+| [T11 / 978281](https://127.0.0.1:8443/scp/tickets.php?id=12) - CLOSED; [KB11](https://127.0.0.1:8443/kb/faq.php?id=11) | The VM was attached to an empty internal switch without DHCP. Reattached only PC01 to HelpDeskLab and renewed its lease. | The client received a 10.77.0.0/24 DHCP address again. Evidence: evidence/T11-observations.json. |
+| [T12 / 342687](https://127.0.0.1:8443/scp/tickets.php?id=13) - CLOSED; [KB12](https://127.0.0.1:8443/kb/faq.php?id=12) | The client subnet mask was incorrect. Removed the temporary manual address and restored DHCP and automatic DNS. | DC TCP389 succeeded with a DHCP /24 address. Evidence: evidence/T12-observations.json. |
+| [T13 / 924720](https://127.0.0.1:8443/scp/tickets.php?id=14) - CLOSED; [KB13](https://127.0.0.1:8443/kb/faq.php?id=13) | The lab adapter was disabled. Enabled the same adapter and renewed DHCP. | Adapter status was Up and FS01 TCP445 succeeded. Evidence: evidence/T13-observations.json. |
+| [T14 / 875136](https://127.0.0.1:8443/scp/tickets.php?id=15) - CLOSED; [KB14](https://127.0.0.1:8443/kb/faq.php?id=14) | The named Lab-T14 outbound rule blocked SMB. Removed only the injected Lab-T14 rule. | FS01 TCP445 succeeded and the temporary rule was absent. Evidence: evidence/T14-observations.json. |
+| [T15 / 901233](https://127.0.0.1:8443/scp/tickets.php?id=16) - CLOSED; [KB15](https://127.0.0.1:8443/kb/faq.php?id=15) | The client gateway was changed to unused .254. Restored DHCP routing through HD01 at .1. | The same external TCP443 probe succeeded again. Evidence: evidence/T15-observations.json. |
+| [T16 / 231786](https://127.0.0.1:8443/scp/tickets.php?id=17) - CLOSED; [KB16](https://127.0.0.1:8443/kb/faq.php?id=16) | The authorized user was missing from GG_HR. Restored only hr04 membership in GG_HR. | Fresh ordinary-user logon read, wrote and deleted successfully; another department remained denied. Evidence: evidence/share-T16-fault-hr04-HR.json; evidence/share-T16-repair-hr04-HR.json; evidence/permission-live-tickets.txt. |
+| [T17 / 802439](https://127.0.0.1:8443/scp/tickets.php?id=18) - CLOSED; [KB17](https://127.0.0.1:8443/kb/faq.php?id=17) | The department NTFS Allow rule was removed while SMB Change remained. Restored the exact saved directory security descriptor. | Fresh ordinary-user logon read, wrote and deleted successfully; another department remained denied. Evidence: evidence/share-T17-fault-finance04-Finance.json; evidence/share-T17-repair-finance04-Finance.json; evidence/permission-live-tickets.txt. |
+| [T18 / 193262](https://127.0.0.1:8443/scp/tickets.php?id=19) - CLOSED; [KB18](https://127.0.0.1:8443/kb/faq.php?id=18) | SMB Change was removed while the NTFS Modify grant remained. Restored SMB Change for CORP\DL_Sales_Modify; confirmed NTFS was unchanged. | Fresh ordinary-user logon read, wrote and deleted successfully; another department remained denied. Evidence: evidence/share-T18-fault-sales04-Sales.json; evidence/share-T18-repair-sales04-Sales.json; evidence/permission-live-tickets.txt. |
+| [T19 / 920659](https://127.0.0.1:8443/scp/tickets.php?id=20) - CLOSED; [KB19](https://127.0.0.1:8443/kb/faq.php?id=19) | The old logon and SMB session retained the earlier group authorization state. Started a fresh Windows logon after restoring authorized membership. | The retained token stayed denied and a new ordinary-user logon read, wrote and deleted in Operations. Evidence: evidence/T19-observations.json. |
+| [T20 / 856842](https://127.0.0.1:8443/scp/tickets.php?id=21) - CLOSED; [KB20](https://127.0.0.1:8443/kb/faq.php?id=20) | Public intentionally grants read-only access. Confirmed the intended ACL and directed the requester to the writable IT department share. | Public file read succeeded and write failed; the same ordinary user read, wrote and deleted in IT. No broad permission grant was made. Evidence: evidence/share-T20-it04-Public.json; evidence/share-baseline-it04-IT.json. |
+
+## Scope and limitations
+
+T09 validated stale **cache-only** negative DNS retrieval after record creation, followed by a successful cache clear, fresh resolution and positive cache retest. Earlier ordinary application lookups auto-refreshed, so a persistent ordinary-lookup outage was **not reproduced**. That limitation is preserved in the ticket, FAQ and raw observations.
+
+T10 used nslookup to validate suffix search. An earlier Resolve-DnsName short-name probe was unsuitable; its failed attempt remains in diagnostic history. T12 used unused .250, outside the DHCP pool, for its temporary /30 fault. Login cases used real Windows authentication calls; the drive-map check additionally used an interactive console sign-in.
+
+The host retains VBS; VirtualBox uses its slower NEM backend. Several guest shutdown/setup phases stalled and required VM resets, followed by successful guest and domain verification. No physical-host security feature was disabled. The VMs are isolated from the physical LAN; HD01 forwards bind to loopback only.
+
+Passwords, private keys, SQL/application backups and VM disks are excluded from the build ZIP and kept in restricted local storage. The ZIP is the reproducible build/evidence package; the registered VMs are the live deployment. See [live-lab.md](../docs/live-lab.md) for access and recovery instructions.

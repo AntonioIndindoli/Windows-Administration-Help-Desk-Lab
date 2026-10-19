@@ -1,0 +1,12 @@
+{
+    "exercise":  "T14",
+    "time":  "2026-10-18T19:57:48.9379895-07:00",
+    "computer":  "PC01",
+    "dns":  [
+                "10.77.0.20"
+            ],
+    "smb":  false,
+    "fault_observed":  true,
+    "repair_verified":  true,
+    "baseline_restored":  true
+}

@@ -1,0 +1,6 @@
+{
+    "computer":  "PC01",
+    "autologon_disabled":  true,
+    "default_password_absent":  true,
+    "guest_service":  "Running"
+}

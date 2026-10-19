@@ -1,0 +1,65 @@
+[
+  {
+    "vm": "PC01",
+    "captured": "2026-10-18T20:26:28.6243149-07:00",
+    "snapshot_details": [
+      "SnapshotName=\"Completed-Lab-2026-10-18\"",
+      "SnapshotUUID=\"db68104d-d02c-4f5f-abcf-c6b1d9883cf7\"",
+      "SnapshotDescription=\"Coordinated five-VM set: 30 users, 3 joins, 20 validated tickets. Restore all five together.\"",
+      "CurrentSnapshotName=\"Completed-Lab-2026-10-18\"",
+      "CurrentSnapshotUUID=\"db68104d-d02c-4f5f-abcf-c6b1d9883cf7\"",
+      "CurrentSnapshotNode=\"SnapshotName\""
+    ]
+  },
+  {
+    "vm": "PC02",
+    "captured": "2026-10-18T20:26:28.6565704-07:00",
+    "snapshot_details": [
+      "SnapshotName=\"Completed-Lab-2026-10-18\"",
+      "SnapshotUUID=\"16d2c8ac-adae-4661-b82d-66557bd52460\"",
+      "SnapshotDescription=\"Coordinated five-VM set: 30 users, 3 joins, 20 validated tickets. Restore all five together.\"",
+      "CurrentSnapshotName=\"Completed-Lab-2026-10-18\"",
+      "CurrentSnapshotUUID=\"16d2c8ac-adae-4661-b82d-66557bd52460\"",
+      "CurrentSnapshotNode=\"SnapshotName\""
+    ]
+  },
+  {
+    "vm": "FS01",
+    "captured": "2026-10-18T20:26:28.6895418-07:00",
+    "snapshot_details": [
+      "SnapshotName=\"Completed-Lab-2026-10-18\"",
+      "SnapshotUUID=\"eb343fa9-bce6-4c7e-85da-d1d4488cfc3d\"",
+      "SnapshotDescription=\"Coordinated five-VM set: 30 users, 3 joins, 20 validated tickets. Restore all five together.\"",
+      "CurrentSnapshotName=\"Completed-Lab-2026-10-18\"",
+      "CurrentSnapshotUUID=\"eb343fa9-bce6-4c7e-85da-d1d4488cfc3d\"",
+      "CurrentSnapshotNode=\"SnapshotName\""
+    ]
+  },
+  {
+    "vm": "DC01",
+    "captured": "2026-10-18T20:26:28.7208353-07:00",
+    "snapshot_details": [
+      "SnapshotName=\"Completed-Lab-2026-10-18\"",
+      "SnapshotUUID=\"aa77e6b2-c946-4baa-87f8-83adb3a8096e\"",
+      "SnapshotDescription=\"Coordinated five-VM set: 30 users, 3 joins, 20 validated tickets. Restore all five together.\"",
+      "CurrentSnapshotName=\"Completed-Lab-2026-10-18\"",
+      "CurrentSnapshotUUID=\"aa77e6b2-c946-4baa-87f8-83adb3a8096e\"",
+      "CurrentSnapshotNode=\"SnapshotName\""
+    ]
+  },
+  {
+    "vm": "HD01",
+    "captured": "2026-10-18T20:26:28.7514987-07:00",
+    "snapshot_details": [
+      "SnapshotName=\"Ubuntu-Web-Ready\"",
+      "SnapshotUUID=\"1a57a1b0-8fad-4d99-832d-fad0526986e4\"",
+      "SnapshotDescription=\"Verified Ubuntu cloud-init done; Apache, MariaDB, PHP and NAT active; before osTicket install.\"",
+      "SnapshotName-1=\"Completed-Lab-2026-10-18\"",
+      "SnapshotUUID-1=\"96d4cdfa-3f1c-49c8-9298-449beb1890f5\"",
+      "SnapshotDescription-1=\"Coordinated five-VM set: 30 users, 3 joins, 20 validated tickets. Restore all five together.\"",
+      "CurrentSnapshotName=\"Completed-Lab-2026-10-18\"",
+      "CurrentSnapshotUUID=\"96d4cdfa-3f1c-49c8-9298-449beb1890f5\"",
+      "CurrentSnapshotNode=\"SnapshotName-1\""
+    ]
+  }
+]

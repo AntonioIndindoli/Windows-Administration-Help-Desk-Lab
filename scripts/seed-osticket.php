@@ -26,15 +26,15 @@ foreach ($items as $item) {
         $categories[$name] = $category->getId();
     }
     $errors = [];
-    $title = $item['kb'].' — '.$item['title'];
+    $title = $item['kb'].' - '.$item['title'];
     $faq = FAQ::lookup(FAQ::findIdByQuestion($title)) ?: FAQ::create();
-    $body = '<p><strong>DRAFT — Expected solution; live verification pending.</strong></p><pre>'.htmlspecialchars($item['expected_article'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8').'</pre>';
+    $body = '<p><strong>DRAFT - Expected solution; live verification pending.</strong></p><pre>'.htmlspecialchars($item['expected_article'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8').'</pre>';
     $vars = ['id'=>$faq->getId() ?: 0, 'question'=>$title, 'category_id'=>$categories[$name], 'answer'=>$body, 'ispublished'=>0, 'notes'=>'Do not claim this scenario resolved until actual diagnostics and retest are recorded.', 'topics'=>[]];
     if (!$faq->update($vars, $errors)) { throw new Exception(json_encode($errors)); }
     $errors = [];
     $user = User::fromVars(['name'=>'Lab '.$item['user'], 'email'=>$item['user'].'@corp.example.test']);
     if (!$user) { throw new Exception('Could not provision simulated requester '.$item['user']); }
-    $ticketVars = ['name'=>'Lab '.$item['user'], 'email'=>$item['user'].'@corp.example.test', 'subject'=>$item['exercise'].' — '.$item['title'], 'message'=>'Simulated support exercise. Pending live fault injection, diagnostic evidence and resolution verification. A private expected-solution draft exists as '.$item['kb'].'.', 'topicId'=>1, 'source'=>'API'];
+    $ticketVars = ['name'=>'Lab '.$item['user'], 'email'=>$item['user'].'@corp.example.test', 'subject'=>$item['exercise'].' - '.$item['title'], 'message'=>'Simulated support exercise. Pending live fault injection, diagnostic evidence and resolution verification. A private expected-solution draft exists as '.$item['kb'].'.', 'topicId'=>1, 'source'=>'API'];
     $ticketVars['uid'] = $user->getId();
     $ticket = Ticket::create($ticketVars, $errors, 'api', false, false);
     if (!$ticket) { throw new Exception(json_encode($errors)); }

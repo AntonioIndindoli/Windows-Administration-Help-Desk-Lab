@@ -6,8 +6,12 @@ if($env:COMPUTERNAME -ne 'DC01'){throw 'DC01 only'}
 New-Item -ItemType Directory -Path C:\Lab,C:\LabEvidence,C:\LabSecrets -Force|Out-Null
 & icacls.exe C:\LabSecrets /inheritance:r /grant:r '*S-1-5-18:(OI)(CI)F' '*S-1-5-32-544:(OI)(CI)F' | Out-Null
 if($LASTEXITCODE -ne 0){throw 'Cannot protect guest secrets directory'}
-Copy-Item '\\VBOXSVR\LabPayload\scripts' C:\Lab -Recurse -Force
-Copy-Item '\\VBOXSVR\LabPayload\data' C:\Lab -Recurse -Force
+if(Test-Path '\\VBOXSVR\LabPayload\scripts') {
+    Copy-Item '\\VBOXSVR\LabPayload\scripts' C:\Lab -Recurse -Force
+    Copy-Item '\\VBOXSVR\LabPayload\data' C:\Lab -Recurse -Force
+} elseif(-not(Test-Path C:\Lab\scripts\01-NewForest.ps1)) {
+    throw 'Copy the scripts and data folders to C:\Lab using guest control before running.'
+}
 $recoveryFile='C:\LabSecrets\DSRM.password'
 if(Test-Path $recoveryFile){throw 'Existing recovery password. Inspect promotion state before retrying.'}
 $rng=[Security.Cryptography.RandomNumberGenerator]::Create()

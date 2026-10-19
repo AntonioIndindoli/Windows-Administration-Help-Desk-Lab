@@ -1,0 +1,31 @@
+{
+    "exercise":  "T09",
+    "time":  "2026-10-18T20:10:24.6369686-07:00",
+    "initial_nxdomain":  true,
+    "negative_cache":  [
+                           {
+                               "Entry":  "kbtest.corp.example.test",
+                               "Status":  9003,
+                               "Type":  255,
+                               "TimeToLive":  0
+                           }
+                       ],
+    "authoritative":  [
+                          {
+                              "value":  "10.77.0.30",
+                              "PSComputerName":  "DC01",
+                              "RunspaceId":  "414886ff-d0b7-4cb4-9482-4d728b66e3f0",
+                              "PSShowComputerName":  true
+                          }
+                      ],
+    "fault_observed":  true,
+    "fault_scope":  "Cache-only lookup; earlier ordinary application lookups refreshed automatically and did not reproduce a persistent outage.",
+    "repair_verified":  true,
+    "baseline_restored":  true,
+    "positive_cache":  [
+                           "10.77.0.30"
+                       ],
+    "restored_addresses":  [
+                               "10.77.0.30"
+                           ]
+}

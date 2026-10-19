@@ -1,0 +1,23 @@
+{
+    "Name":  "PC02",
+    "Domain":  "corp.example.test",
+    "PartOfDomain":  true
+}
+True
+Updating policy...
+
+
+
+Computer Policy update has completed successfully.
+
+User Policy update has completed successfully.
+
+
+
+{
+    "IPAddress":  "10.77.0.101",
+    "PrefixLength":  24
+}
+{
+    "InactivityTimeoutSecs":  900
+}

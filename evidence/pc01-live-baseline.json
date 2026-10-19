@@ -1,0 +1,25 @@
+{
+    "exercise":  "Baseline",
+    "time":  "2026-10-18T20:28:04.9946067-07:00",
+    "computer":  "PC01",
+    "domain":  {
+                   "Name":  "PC01",
+                   "Domain":  "corp.example.test",
+                   "PartOfDomain":  true
+               },
+    "secure_channel":  true,
+    "addresses":  [
+                      {
+                          "IPAddress":  "10.77.0.100",
+                          "PrefixLength":  24,
+                          "PrefixOrigin":  3
+                      }
+                  ],
+    "dns":  [
+                "10.77.0.10"
+            ],
+    "fs_tcp445":  true,
+    "helpdesk_tcp443":  true,
+    "external_tcp443":  true
+}
+

@@ -1,0 +1,8 @@
+{
+    "Name":  "FS01",
+    "DistinguishedName":  "CN=FS01,OU=Servers,DC=corp,DC=example,DC=test"
+}
+{
+    "HostName":  "helpdesk",
+    "IP":  "10.77.0.30"
+}

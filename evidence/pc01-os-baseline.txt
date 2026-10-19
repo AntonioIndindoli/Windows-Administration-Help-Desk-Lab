@@ -1,0 +1,14 @@
+{
+    "Caption":  "Microsoft Windows 11 Enterprise Evaluation",
+    "Version":  "10.0.26300",
+    "BuildNumber":  "26300"
+}
+{
+    "Name":  "VBoxService",
+    "Status":  4,
+    "StartType":  2
+}
+{
+    "InterfaceAlias":  "Ethernet",
+    "IPv4":  "169.254.126.225"
+}

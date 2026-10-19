@@ -1,0 +1,32 @@
+[
+    {
+        "HostName":  "pc01.corp.example.test",
+        "IPAddress":  {
+                          "Address":  1677741322,
+                          "AddressFamily":  2,
+                          "ScopeId":  null,
+                          "IsIPv6Multicast":  false,
+                          "IsIPv6LinkLocal":  false,
+                          "IsIPv6SiteLocal":  false,
+                          "IsIPv6Teredo":  false,
+                          "IsIPv4MappedToIPv6":  false,
+                          "IPAddressToString":  "10.77.0.100"
+                      },
+        "AddressState":  "Active"
+    },
+    {
+        "HostName":  "pc02.corp.example.test",
+        "IPAddress":  {
+                          "Address":  1694518538,
+                          "AddressFamily":  2,
+                          "ScopeId":  null,
+                          "IsIPv6Multicast":  false,
+                          "IsIPv6LinkLocal":  false,
+                          "IsIPv6SiteLocal":  false,
+                          "IsIPv6Teredo":  false,
+                          "IsIPv4MappedToIPv6":  false,
+                          "IPAddressToString":  "10.77.0.101"
+                      },
+        "AddressState":  "Active"
+    }
+]

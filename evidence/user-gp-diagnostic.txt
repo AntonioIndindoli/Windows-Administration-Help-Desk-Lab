@@ -1,0 +1,56 @@
+
+ Status Name 
+ ------ ---- 
+Running gpsvc
+[
+    {
+        "TimeCreated":  "\/Date(1792379817191)\/",
+        "Id":  5321,
+        "Message":  "GP Refresh Attribution Parameter: Group Policy refresh. Target=User ParentProcess=\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ParentPID=3496 GPUpdatePID=5240 SessionID=0 Account=\"CORP\\it04\""
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420696)\/",
+        "Id":  5321,
+        "Message":  "GP Refresh Attribution Parameter: Group Policy refresh. Target=User ParentProcess=\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ParentPID=5172 GPUpdatePID=3028 SessionID=0 Account=\"CORP\\Administrator\""
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420687)\/",
+        "Id":  8004,
+        "Message":  "Completed manual processing of policy for computer CORP\\PC01$ in 0 seconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420663)\/",
+        "Id":  5016,
+        "Message":  "Completed Security Extension Processing in 453 milliseconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420313)\/",
+        "Id":  4016,
+        "Message":  "Starting Security Extension Processing. \r\n\r\nList of applicable Group Policy objects: (Changes were detected.)\r\n\r\nDefault Domain Policy\n"
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420296)\/",
+        "Id":  5016,
+        "Message":  "Completed Registry Extension Processing in 47 milliseconds."
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420255)\/",
+        "Id":  4016,
+        "Message":  "Starting Registry Extension Processing. \r\n\r\nList of applicable Group Policy objects: (Changes were detected.)\r\n\r\nLab-Workstation-Security\n"
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420255)\/",
+        "Id":  5320,
+        "Message":  "Finished checking for non-system extensions."
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420255)\/",
+        "Id":  5320,
+        "Message":  "Service configuration update to standalone is not required and will be skipped."
+    },
+    {
+        "TimeCreated":  "\/Date(1792378420255)\/",
+        "Id":  5320,
+        "Message":  "Checking for Group Policy client extensions that are not part of the system."
+    }
+]

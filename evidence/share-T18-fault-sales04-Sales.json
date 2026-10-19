@@ -1,0 +1,16 @@
+{
+    "time":  "2026-10-18T20:02:23.4657862-07:00",
+    "label":  "T18-fault",
+    "user":  "sales04",
+    "identity":  "CORP\\sales04",
+    "share":  "Sales",
+    "expected":  "Denied",
+    "read":  false,
+    "write":  false,
+    "test_file_removed":  false,
+    "pass":  true,
+    "errors":  [
+                   "Exception calling \"GetFiles\" with \"1\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Sales\u0027 is denied.\"",
+                   "Exception calling \"WriteAllText\" with \"2\" argument(s): \"Access to the path \u0027\\\\FS01.corp.example.test\\Sales\\Lab-sales04-a3bd5e85b6bd4b159e55b1bbe432175f.txt\u0027 is denied.\""
+               ]
+}

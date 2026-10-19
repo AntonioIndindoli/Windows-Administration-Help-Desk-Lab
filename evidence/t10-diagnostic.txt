@@ -1,0 +1,192 @@
+{
+    "exercise":  "T10",
+    "time":  "2026-10-18T19:56:22.9988143-07:00",
+    "computer":  "PC01",
+    "short":  [
+
+              ],
+    "fqdn":  [
+                 "10.77.0.20"
+             ],
+    "retest":  [
+
+               ],
+    "fault_observed":  true,
+    "repair_verified":  false,
+    "baseline_restored":  true
+}
+{
+    "CimClass":  {
+                     "CimSuperClassName":  "CIM_DNSGeneralSettingData",
+                     "CimSuperClass":  {
+                                           "CimSuperClassName":  "CIM_IPAssignmentSettingData",
+                                           "CimSuperClass":  "ROOT/StandardCimv2:CIM_IPAssignmentSettingData",
+                                           "CimClassProperties":  "Caption Description ElementName InstanceID AddressOrigin = 2 ProtocolIFType AppendParentSuffixes AppendPrimarySuffixes DNSSuffixesToAppend",
+                                           "CimClassQualifiers":  "UMLPackagePath = \"CIM::Network::DNS\" Description = \"700\" Version = \"701\"",
+                                           "CimClassMethods":  "",
+                                           "CimSystemProperties":  "Microsoft.Management.Infrastructure.CimSystemProperties"
+                                       },
+                     "CimClassProperties":  [
+                                                "Caption",
+                                                "Description",
+                                                "ElementName",
+                                                "InstanceID",
+                                                "AddressOrigin = 2",
+                                                "ProtocolIFType",
+                                                "AppendParentSuffixes",
+                                                "AppendPrimarySuffixes",
+                                                "DNSSuffixesToAppend",
+                                                "DevolutionLevel",
+                                                "SuffixSearchList",
+                                                "UseDevolution",
+                                                "UseSuffixSearchList"
+                                            ],
+                     "CimClassQualifiers":  [
+                                                "UMLPackagePath = \"CIM::Network::DNS\"",
+                                                "Description = \"706\"",
+                                                "ClassVersion = \"1.0.0\"",
+                                                "dynamic = True",
+                                                "provider = \"dnsclientcim\""
+                                            ],
+                     "CimClassMethods":  [
+
+                                         ],
+                     "CimSystemProperties":  {
+                                                 "Namespace":  "ROOT/StandardCimv2",
+                                                 "ServerName":  "PC01",
+                                                 "ClassName":  "MSFT_DNSClientGlobalSetting",
+                                                 "Path":  null
+                                             }
+                 },
+    "CimInstanceProperties":  [
+                                  {
+                                      "Name":  "Caption",
+                                      "Value":  null,
+                                      "CimType":  14,
+                                      "Flags":  "Property, NotModified, NullValue",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "Description",
+                                      "Value":  null,
+                                      "CimType":  14,
+                                      "Flags":  "Property, NotModified, NullValue",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "ElementName",
+                                      "Value":  "",
+                                      "CimType":  14,
+                                      "Flags":  "Property, Required, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "InstanceID",
+                                      "Value":  "",
+                                      "CimType":  14,
+                                      "Flags":  "Property, Key, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "AddressOrigin",
+                                      "Value":  2,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "ProtocolIFType",
+                                      "Value":  null,
+                                      "CimType":  4,
+                                      "Flags":  "Property, NotModified, NullValue",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "AppendParentSuffixes",
+                                      "Value":  true,
+                                      "CimType":  1,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "AppendPrimarySuffixes",
+                                      "Value":  true,
+                                      "CimType":  1,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "DNSSuffixesToAppend",
+                                      "Value":  "corp.example.test",
+                                      "CimType":  30,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "DevolutionLevel",
+                                      "Value":  0,
+                                      "CimType":  6,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "SuffixSearchList",
+                                      "Value":  "corp.example.test",
+                                      "CimType":  30,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "UseDevolution",
+                                      "Value":  true,
+                                      "CimType":  1,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  },
+                                  {
+                                      "Name":  "UseSuffixSearchList",
+                                      "Value":  true,
+                                      "CimType":  1,
+                                      "Flags":  "Property, NotModified",
+                                      "IsValueModified":  false
+                                  }
+                              ],
+    "CimSystemProperties":  {
+                                "Namespace":  "ROOT/StandardCimv2",
+                                "ServerName":  "PC01",
+                                "ClassName":  "MSFT_DNSClientGlobalSetting",
+                                "Path":  null
+                            },
+    "Caption":  null,
+    "Description":  null,
+    "ElementName":  "",
+    "InstanceID":  "",
+    "AddressOrigin":  2,
+    "ProtocolIFType":  null,
+    "AppendParentSuffixes":  true,
+    "AppendPrimarySuffixes":  true,
+    "DNSSuffixesToAppend":  [
+                                "corp.example.test"
+                            ],
+    "DevolutionLevel":  0,
+    "SuffixSearchList":  [
+                             "corp.example.test"
+                         ],
+    "UseDevolution":  true,
+    "UseSuffixSearchList":  true,
+    "PSComputerName":  null
+}
+
+Name                                           Type   TTL   Section    IPAddress                                
+----                                           ----   ---   -------    ---------                                
+FS01.corp.example.test                         A      1200  Answer     10.77.0.20                               
+[
+    {
+        "InterfaceAlias":  "Ethernet",
+        "ConnectionSpecificSuffix":  "corp.example.test"
+    },
+    {
+        "InterfaceAlias":  "Loopback Pseudo-Interface 1",
+        "ConnectionSpecificSuffix":  ""
+    }
+]

@@ -1,0 +1,7 @@
+define('GIT_VERSION', '8d38b06'); // Verified upstream tag commit
+define('THIS_VERSION', 'v1.18.4'); // Release archive deployment
+active
+active
+active
+20
+20

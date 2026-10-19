@@ -1,0 +1,11 @@
+{
+    "computer":  "PC02",
+    "time":  "2026-10-18T20:23:41.9729942-07:00",
+    "https_status":  200,
+    "network_category":  "DomainAuthenticated",
+    "domain_firewall":  {
+                            "Enabled":  1,
+                            "DefaultInboundAction":  4,
+                            "DefaultOutboundAction":  2
+                        }
+}

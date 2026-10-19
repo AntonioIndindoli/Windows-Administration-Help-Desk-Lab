@@ -1,0 +1,22 @@
+[
+    {
+        "Department":  "IT",
+        "Members":  6
+    },
+    {
+        "Department":  "HR",
+        "Members":  6
+    },
+    {
+        "Department":  "Finance",
+        "Members":  6
+    },
+    {
+        "Department":  "Sales",
+        "Members":  6
+    },
+    {
+        "Department":  "Operations",
+        "Members":  6
+    }
+]
