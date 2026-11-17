@@ -21,25 +21,11 @@ The lab models a small organization with five departments (IT, HR, Finance, Sale
 
 [Read the full validation report →](evidence/validation.md)
 
-## Environment
-
-| Machine | Operating system | Purpose | Address |
-|---|---|---|---|
-| DC01 | Windows Server 2025 | Active Directory Domain Services, DNS, DHCP | `10.77.0.10` |
-| FS01 | Windows Server 2025 | Department file shares and Public documents | `10.77.0.20` |
-| HD01 | Ubuntu | osTicket, Apache, MariaDB, and lab NAT routing | `10.77.0.30` |
-| PC01 | Windows 11 Enterprise | Domain workstation and primary troubleshooting client | DHCP: `10.77.0.100` |
-| PC02 | Windows 11 Enterprise | Second domain workstation | DHCP: `10.77.0.101` |
-
-The domain is `corp.example.test` (`CORP`) on `10.77.0.0/24`. Windows guests use DC01 for DNS. The DHCP scope assigns addresses from `.100` to `.199` and supplies DNS and gateway settings. VirtualBox's internal network keeps lab DHCP off the physical LAN; HD01 provides NAT connectivity, with host access ports bound to loopback.
-
 ## Administration skills demonstrated
 
 ### Active Directory and account management
 
 Created organizational units for users, workstations, servers, and security groups. Provisioned 30 test users through PowerShell, assigned department membership, and completed authenticated initial password changes. Joined FS01 and both clients to the intended OUs and verified their domain secure channels.
-
-The [provisioning script](scripts/03-ProvisionUsers.ps1) validates CSV input, generates individual initial passwords, supports `-WhatIf`, and skips existing accounts without resetting their passwords. This makes account creation repeatable while reducing manual entry errors.
 
 ### Group Policy and access control
 
@@ -66,35 +52,18 @@ Worked through 20 support cases using a consistent process: establish the baseli
 
 One useful finding was the difference between restoring group membership and refreshing an existing session: the retained user token stayed denied, while a fresh logon gained the intended access.
 
-**DNS test limitation:** T09 reproduced a stale negative result in a **cache-only** lookup. Ordinary application lookups refreshed automatically on this Windows build, so a persistent outage in ordinary lookups was not reproduced. The ticket, FAQ, and validation report preserve that distinction.
-
-### Validation, security, and recovery
-
-Used `dcdiag`, secure-channel checks, DHCP lease records, resultant Group Policy reports, Windows authentication calls, and user-context file tests to verify behavior. Both clients reached the help desk over HTTPS with the lab CA trusted inside the guests.
-
-Restored the completed osTicket database into a separate test database, extracted the application backup, compared its configuration, and matched the guest and independent host backup hashes. An earlier HD01 checkpoint was restore-tested; the final coordinated five-VM checkpoint set was saved for recovery but was not itself restore-tested.
-
-Passwords, private keys, VM disks, and database/application backups are kept outside the portfolio build ZIP in restricted storage. Test users have no administrative rights.
-
 ## Evidence and project files
 
 | Resource | What it shows |
 |---|---|
 | [Validation report](evidence/validation.md) | Acceptance results, ticket resolutions, evidence links, and limitations |
-| [Domain baseline results](evidence/baseline-final.csv) | All 19 domain checks and their recorded outcomes |
-| [Domain health diagnostics](evidence/dcdiag-final.txt) | AD advertising, services, and basic DNS results |
-| [Interactive user drive mappings](evidence/interactive-mappings.json) | Actual P: and H: mappings from the IT user's desktop session |
 | [Verified ticket results](evidence/verified-ticket-results.json) | Observed symptoms, causes, repairs, retests, and client guidance |
-| [osTicket completion manifest](evidence/osticket-ticket-manifest.json) | The 20 exercise ticket numbers and published FAQ status |
-| [Public knowledge-base checks](evidence/osticket-public-faq-checks.json) | Article visibility, content checks, and search verification |
 | [Completed backup restore results](evidence/osticket-completed-restore.txt) | Database restore and application configuration comparison |
-| [PowerShell and supporting scripts](scripts/) | Provisioning, configuration, fault testing, and evidence automation |
 
 The osTicket instance is local to the lab. Its live ticket links require access to that environment; the saved evidence can be reviewed independently.
 
 ## Run or reproduce the project
 
-- **Use the existing deployment:** [Live lab access and recovery instructions](docs/live-lab.md).
 - **Build a fresh environment:** [Build guide](docs/build-guide.md), [Group Policy configuration](docs/group-policy.md), and [osTicket setup](docs/osticket.md).
 - **Review or repeat the exercises:** [20 support scenarios](docs/tickets-and-kb.md). These describe expected behavior; the validation report records the actual outcomes.
 - **Download the build package:** [Scripts, documentation, and evidence ZIP](Build/Windows-Administration-Help-Desk-Lab.zip). Installation media, VM disks, and credentials remain separate.
