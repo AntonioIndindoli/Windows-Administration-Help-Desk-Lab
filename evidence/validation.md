@@ -1,8 +1,8 @@
-# Actual validation register
+# Recorded lab validation
 
-**Complete - 2026-10-18T20:29:07-07:00.** Five live VirtualBox VMs deployed; 30 domain users provisioned; FS01, PC01 and PC02 joined; 20 support exercises resolved in osTicket with 20 published knowledge-base articles.
+**Recorded on 2026-10-18T20:29:07-07:00.** Five live VirtualBox VMs deployed; 30 domain users provisioned; FS01, PC01 and PC02 joined; 20 support exercises resolved in osTicket with 20 published knowledge-base articles.
 
-The records below describe tests actually performed. Proposed solutions in the exercise guide were not accepted as results. Historical installation-stage observations remain in `deployment-history.md`.
+This report was generated from the original deployment and automated tests. It is retained as a historical record with supporting output, not as evidence of manual completion or a check of the current VM state. The report-generation and test scripts have since been removed.
 
 ## Acceptance results
 
@@ -61,4 +61,4 @@ T10 used nslookup to validate suffix search. An earlier Resolve-DnsName short-na
 
 The host retains VBS; VirtualBox uses its slower NEM backend. Several guest shutdown/setup phases stalled and required VM resets, followed by successful guest and domain verification. No physical-host security feature was disabled. The VMs are isolated from the physical LAN; HD01 forwards bind to loopback only.
 
-Passwords, private keys, SQL/application backups and VM disks are excluded from the build ZIP and kept in restricted local storage. The ZIP is the reproducible build/evidence package; the registered VMs are the live deployment. See [live-lab.md](../docs/live-lab.md) for access and recovery instructions.
+Passwords, private keys, SQL/application backups, and VM disks remain in local storage excluded from Git. The former build ZIP and automation tooling have been removed; the VM files are retained. See [live-lab.md](../docs/live-lab.md) for access and recovery instructions.
