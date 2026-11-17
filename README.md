@@ -13,11 +13,9 @@ The lab models a small organization with five departments (IT, HR, Finance, Sale
 | Virtual infrastructure | Five deployed VMs on an isolated lab network |
 | Domain administration | Active Directory, DNS, and authorized DHCP configured; one file server and two Windows 11 clients joined to the domain |
 | User provisioning | 30 accounts created from CSV data, with six users in each department and group-based access assignments |
-| Policy management | Three lab GPOs covering account security, workstation security, and department drive mappings |
 | File access | Five allowed and five denied department-access tests passed; Public allowed reading and denied writing |
 | Help desk operations | 20 simulated support tickets investigated, retested, and closed in osTicket; 20 corresponding knowledge-base articles published |
 | Domain health | All 19 baseline checks passed; AD advertising, services, and basic DNS diagnostics passed |
-| Recovery | Completed help desk database/application backups restored and checked; a coordinated five-VM checkpoint set saved |
 
 [Read the full validation report →](evidence/validation.md)
 
