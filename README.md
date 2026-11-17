@@ -17,8 +17,6 @@ The lab models a small organization with five departments (IT, HR, Finance, Sale
 | Help desk operations | 20 simulated support tickets investigated, retested, and closed in osTicket; 20 corresponding knowledge-base articles published |
 | Domain health | All 19 baseline checks passed; AD advertising, services, and basic DNS diagnostics passed |
 
-[Read the full validation report →](evidence/validation.md)
-
 ## Administration skills demonstrated
 
 ### Active Directory and account management
