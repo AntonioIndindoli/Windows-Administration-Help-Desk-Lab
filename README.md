@@ -2,8 +2,6 @@
 
 A local practice environment for Active Directory, DNS, DHCP, Group Policy, file permissions, and help desk troubleshooting.
 
-The original deployment and testing used automation. The automation and build tooling have been removed from this working copy. Retained evidence records that earlier run; it does not establish that the exercises were completed manually.
-
 ## Environment
 
 | Machine | Role | Lab address |
